@@ -13,7 +13,40 @@
 		09C63822207C5856007E6E35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C63821207C5856007E6E35 /* Assets.xcassets */; };
 		09C63825207C5856007E6E35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C63823207C5856007E6E35 /* LaunchScreen.storyboard */; };
 		09C63828207C5856007E6E35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C63827207C5856007E6E35 /* main.m */; };
+		09C63834207C58E1007E6E35 /* VTReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C63833207C58CD007E6E35 /* VTReader.framework */; };
+		09C63835207C58E1007E6E35 /* VTReader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09C63833207C58CD007E6E35 /* VTReader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09C63832207C58CD007E6E35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09C6382E207C58CD007E6E35 /* VTReader.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 09C637F7207C57DA007E6E35;
+			remoteInfo = VTReader;
+		};
+		09C63836207C58E1007E6E35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09C6382E207C58CD007E6E35 /* VTReader.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 09C637F6207C57DA007E6E35;
+			remoteInfo = VTReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		09C63838207C58E2007E6E35 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				09C63835207C58E1007E6E35 /* VTReader.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		09C63815207C5856007E6E35 /* VTReaderTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VTReaderTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +59,7 @@
 		09C63824207C5856007E6E35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09C63826207C5856007E6E35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09C63827207C5856007E6E35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		09C6382E207C58CD007E6E35 /* VTReader.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VTReader.xcodeproj; path = ../../VTReader/VTReader.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09C63834207C58E1007E6E35 /* VTReader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +93,7 @@
 		09C63817207C5856007E6E35 /* VTReaderTest */ = {
 			isa = PBXGroup;
 			children = (
+				09C6382E207C58CD007E6E35 /* VTReader.xcodeproj */,
 				09C63818207C5856007E6E35 /* AppDelegate.h */,
 				09C63819207C5856007E6E35 /* AppDelegate.m */,
 				09C6381B207C5856007E6E35 /* ViewController.h */,
@@ -71,6 +107,14 @@
 			path = VTReaderTest;
 			sourceTree = "<group>";
 		};
+		09C6382F207C58CD007E6E35 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09C63833207C58CD007E6E35 /* VTReader.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,10 +125,12 @@
 				09C63811207C5856007E6E35 /* Sources */,
 				09C63812207C5856007E6E35 /* Frameworks */,
 				09C63813207C5856007E6E35 /* Resources */,
+				09C63838207C58E2007E6E35 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				09C63837207C58E1007E6E35 /* PBXTargetDependency */,
 			);
 			name = VTReaderTest;
 			productName = VTReaderTest;
@@ -117,12 +163,28 @@
 			mainGroup = 09C6380C207C5856007E6E35;
 			productRefGroup = 09C63816207C5856007E6E35 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 09C6382F207C58CD007E6E35 /* Products */;
+					ProjectRef = 09C6382E207C58CD007E6E35 /* VTReader.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				09C63814207C5856007E6E35 /* VTReaderTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		09C63833207C58CD007E6E35 /* VTReader.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VTReader.framework;
+			remoteRef = 09C63832207C58CD007E6E35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		09C63813207C5856007E6E35 /* Resources */ = {
@@ -149,6 +211,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09C63837207C58E1007E6E35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VTReader;
+			targetProxy = 09C63836207C58E1007E6E35 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		09C6381E207C5856007E6E35 /* Main.storyboard */ = {

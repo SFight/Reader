@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import <VTReader/VTReader.h>
+
 @interface ViewController ()
 
 @end
