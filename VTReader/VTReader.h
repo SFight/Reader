@@ -16,4 +16,7 @@ FOUNDATION_EXPORT const unsigned char VTReaderVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <VTReader/PublicHeader.h>
 
-
+#import <VTReader/VTEnums.h>
+#import <VTReader/VTReaderManager.h>
+#import <VTReader/NSString+VTSandBox.h>
+#import <VTReader/NSString+VTPhoneInfo.h>

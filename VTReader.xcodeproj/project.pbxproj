@@ -8,12 +8,128 @@
 
 /* Begin PBXBuildFile section */
 		09C637FC207C57DA007E6E35 /* VTReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C637FA207C57DA007E6E35 /* VTReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09C63842207C5AE5007E6E35 /* VTReader.pch in Headers */ = {isa = PBXBuildFile; fileRef = 09C63841207C5AE5007E6E35 /* VTReader.pch */; };
+		09C63868207C5B0A007E6E35 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C63845207C5B0A007E6E35 /* aes.h */; };
+		09C63869207C5B0A007E6E35 /* aes_via_ace.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C63846207C5B0A007E6E35 /* aes_via_ace.h */; };
+		09C6386A207C5B0A007E6E35 /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 09C63847207C5B0A007E6E35 /* aescrypt.c */; };
+		09C6386B207C5B0A007E6E35 /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = 09C63848207C5B0A007E6E35 /* aeskey.c */; };
+		09C6386C207C5B0A007E6E35 /* aesopt.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C63849207C5B0A007E6E35 /* aesopt.h */; };
+		09C6386D207C5B0A007E6E35 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = 09C6384A207C5B0A007E6E35 /* aestab.c */; };
+		09C6386E207C5B0A007E6E35 /* aestab.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C6384B207C5B0A007E6E35 /* aestab.h */; };
+		09C6386F207C5B0A007E6E35 /* brg_endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C6384C207C5B0A007E6E35 /* brg_endian.h */; };
+		09C63870207C5B0A007E6E35 /* brg_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C6384D207C5B0A007E6E35 /* brg_types.h */; };
+		09C63871207C5B0A007E6E35 /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = 09C6384E207C5B0A007E6E35 /* entropy.c */; };
+		09C63872207C5B0A007E6E35 /* entropy.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C6384F207C5B0A007E6E35 /* entropy.h */; };
+		09C63873207C5B0A007E6E35 /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = 09C63850207C5B0A007E6E35 /* fileenc.c */; };
+		09C63874207C5B0A007E6E35 /* fileenc.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C63851207C5B0A007E6E35 /* fileenc.h */; };
+		09C63875207C5B0A007E6E35 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 09C63852207C5B0A007E6E35 /* hmac.c */; };
+		09C63876207C5B0A007E6E35 /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C63853207C5B0A007E6E35 /* hmac.h */; };
+		09C63877207C5B0A007E6E35 /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = 09C63854207C5B0A007E6E35 /* prng.c */; };
+		09C63878207C5B0A007E6E35 /* prng.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C63855207C5B0A007E6E35 /* prng.h */; };
+		09C63879207C5B0A007E6E35 /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = 09C63856207C5B0A007E6E35 /* pwd2key.c */; };
+		09C6387A207C5B0A007E6E35 /* pwd2key.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C63857207C5B0A007E6E35 /* pwd2key.h */; };
+		09C6387B207C5B0A007E6E35 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 09C63858207C5B0A007E6E35 /* sha1.c */; };
+		09C6387C207C5B0A007E6E35 /* sha1.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C63859207C5B0A007E6E35 /* sha1.h */; };
+		09C6387D207C5B0A007E6E35 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C6385B207C5B0A007E6E35 /* crypt.h */; };
+		09C6387E207C5B0A007E6E35 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 09C6385C207C5B0A007E6E35 /* ioapi.c */; };
+		09C6387F207C5B0A007E6E35 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C6385D207C5B0A007E6E35 /* ioapi.h */; };
+		09C63880207C5B0A007E6E35 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 09C6385E207C5B0A007E6E35 /* mztools.c */; };
+		09C63881207C5B0A007E6E35 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C6385F207C5B0A007E6E35 /* mztools.h */; };
+		09C63882207C5B0A007E6E35 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 09C63860207C5B0A007E6E35 /* unzip.c */; };
+		09C63883207C5B0A007E6E35 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C63861207C5B0A007E6E35 /* unzip.h */; };
+		09C63884207C5B0A007E6E35 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 09C63862207C5B0A007E6E35 /* zip.c */; };
+		09C63885207C5B0A007E6E35 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C63863207C5B0A007E6E35 /* zip.h */; };
+		09C63886207C5B0A007E6E35 /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C63864207C5B0A007E6E35 /* SSZipArchive.h */; };
+		09C63887207C5B0A007E6E35 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C63865207C5B0A007E6E35 /* SSZipArchive.m */; };
+		09C63888207C5B0A007E6E35 /* SSZipCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C63866207C5B0A007E6E35 /* SSZipCommon.h */; };
+		09C63889207C5B0A007E6E35 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C63867207C5B0A007E6E35 /* ZipArchive.h */; };
+		09C6388E207C5B34007E6E35 /* NSString+VTPhoneInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C6388A207C5B34007E6E35 /* NSString+VTPhoneInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09C6388F207C5B34007E6E35 /* NSString+VTSandBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C6388B207C5B34007E6E35 /* NSString+VTSandBox.m */; };
+		09C63890207C5B34007E6E35 /* NSString+VTSandBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C6388C207C5B34007E6E35 /* NSString+VTSandBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09C63891207C5B34007E6E35 /* NSString+VTPhoneInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C6388D207C5B34007E6E35 /* NSString+VTPhoneInfo.m */; };
+		09C63899207C5B5B007E6E35 /* VTBaseNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C63893207C5B5B007E6E35 /* VTBaseNavigationController.h */; };
+		09C6389A207C5B5B007E6E35 /* VTBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C63894207C5B5B007E6E35 /* VTBaseNavigationController.m */; };
+		09C6389B207C5B5B007E6E35 /* VTBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C63895207C5B5B007E6E35 /* VTBaseView.h */; };
+		09C6389C207C5B5B007E6E35 /* VTBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C63896207C5B5B007E6E35 /* VTBaseView.m */; };
+		09C6389D207C5B5B007E6E35 /* VTBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C63897207C5B5B007E6E35 /* VTBaseViewController.h */; };
+		09C6389E207C5B5B007E6E35 /* VTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C63898207C5B5B007E6E35 /* VTBaseViewController.m */; };
+		09C638A8207C5B6E007E6E35 /* VTPageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C638A0207C5B6D007E6E35 /* VTPageViewController.h */; };
+		09C638A9207C5B6E007E6E35 /* VTReadModelController.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C638A1207C5B6D007E6E35 /* VTReadModelController.h */; };
+		09C638AA207C5B6E007E6E35 /* VTReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C638A2207C5B6E007E6E35 /* VTReadViewController.m */; };
+		09C638AB207C5B6E007E6E35 /* VTReadViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C638A3207C5B6E007E6E35 /* VTReadViewController.h */; };
+		09C638AC207C5B6E007E6E35 /* VTPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C638A4207C5B6E007E6E35 /* VTPageViewController.m */; };
+		09C638AD207C5B6E007E6E35 /* VTReadDataViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C638A5207C5B6E007E6E35 /* VTReadDataViewController.h */; };
+		09C638AE207C5B6E007E6E35 /* VTReadModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C638A6207C5B6E007E6E35 /* VTReadModelController.m */; };
+		09C638AF207C5B6E007E6E35 /* VTReadDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C638A7207C5B6E007E6E35 /* VTReadDataViewController.m */; };
+		09C638B2207C5BB3007E6E35 /* VTReaderManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C638B0207C5BB3007E6E35 /* VTReaderManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09C638B3207C5BB3007E6E35 /* VTReaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C638B1207C5BB3007E6E35 /* VTReaderManager.m */; };
+		09C638B7207C5D89007E6E35 /* VTEnums.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C638B4207C5D88007E6E35 /* VTEnums.m */; };
+		09C638B8207C5D89007E6E35 /* VTConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C638B5207C5D88007E6E35 /* VTConstants.h */; };
+		09C638B9207C5D89007E6E35 /* VTEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C638B6207C5D88007E6E35 /* VTEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09C637F7207C57DA007E6E35 /* VTReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VTReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C637FA207C57DA007E6E35 /* VTReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTReader.h; sourceTree = "<group>"; };
 		09C637FB207C57DA007E6E35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09C63841207C5AE5007E6E35 /* VTReader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTReader.pch; sourceTree = "<group>"; };
+		09C63845207C5B0A007E6E35 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		09C63846207C5B0A007E6E35 /* aes_via_ace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes_via_ace.h; sourceTree = "<group>"; };
+		09C63847207C5B0A007E6E35 /* aescrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aescrypt.c; sourceTree = "<group>"; };
+		09C63848207C5B0A007E6E35 /* aeskey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aeskey.c; sourceTree = "<group>"; };
+		09C63849207C5B0A007E6E35 /* aesopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aesopt.h; sourceTree = "<group>"; };
+		09C6384A207C5B0A007E6E35 /* aestab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aestab.c; sourceTree = "<group>"; };
+		09C6384B207C5B0A007E6E35 /* aestab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aestab.h; sourceTree = "<group>"; };
+		09C6384C207C5B0A007E6E35 /* brg_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_endian.h; sourceTree = "<group>"; };
+		09C6384D207C5B0A007E6E35 /* brg_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_types.h; sourceTree = "<group>"; };
+		09C6384E207C5B0A007E6E35 /* entropy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = entropy.c; sourceTree = "<group>"; };
+		09C6384F207C5B0A007E6E35 /* entropy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entropy.h; sourceTree = "<group>"; };
+		09C63850207C5B0A007E6E35 /* fileenc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fileenc.c; sourceTree = "<group>"; };
+		09C63851207C5B0A007E6E35 /* fileenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileenc.h; sourceTree = "<group>"; };
+		09C63852207C5B0A007E6E35 /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		09C63853207C5B0A007E6E35 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		09C63854207C5B0A007E6E35 /* prng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prng.c; sourceTree = "<group>"; };
+		09C63855207C5B0A007E6E35 /* prng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prng.h; sourceTree = "<group>"; };
+		09C63856207C5B0A007E6E35 /* pwd2key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwd2key.c; sourceTree = "<group>"; };
+		09C63857207C5B0A007E6E35 /* pwd2key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pwd2key.h; sourceTree = "<group>"; };
+		09C63858207C5B0A007E6E35 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		09C63859207C5B0A007E6E35 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		09C6385B207C5B0A007E6E35 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		09C6385C207C5B0A007E6E35 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		09C6385D207C5B0A007E6E35 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		09C6385E207C5B0A007E6E35 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		09C6385F207C5B0A007E6E35 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		09C63860207C5B0A007E6E35 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		09C63861207C5B0A007E6E35 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		09C63862207C5B0A007E6E35 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		09C63863207C5B0A007E6E35 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		09C63864207C5B0A007E6E35 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		09C63865207C5B0A007E6E35 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		09C63866207C5B0A007E6E35 /* SSZipCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipCommon.h; sourceTree = "<group>"; };
+		09C63867207C5B0A007E6E35 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		09C6388A207C5B34007E6E35 /* NSString+VTPhoneInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VTPhoneInfo.h"; sourceTree = "<group>"; };
+		09C6388B207C5B34007E6E35 /* NSString+VTSandBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VTSandBox.m"; sourceTree = "<group>"; };
+		09C6388C207C5B34007E6E35 /* NSString+VTSandBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VTSandBox.h"; sourceTree = "<group>"; };
+		09C6388D207C5B34007E6E35 /* NSString+VTPhoneInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VTPhoneInfo.m"; sourceTree = "<group>"; };
+		09C63893207C5B5B007E6E35 /* VTBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTBaseNavigationController.h; sourceTree = "<group>"; };
+		09C63894207C5B5B007E6E35 /* VTBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTBaseNavigationController.m; sourceTree = "<group>"; };
+		09C63895207C5B5B007E6E35 /* VTBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTBaseView.h; sourceTree = "<group>"; };
+		09C63896207C5B5B007E6E35 /* VTBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTBaseView.m; sourceTree = "<group>"; };
+		09C63897207C5B5B007E6E35 /* VTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTBaseViewController.h; sourceTree = "<group>"; };
+		09C63898207C5B5B007E6E35 /* VTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTBaseViewController.m; sourceTree = "<group>"; };
+		09C638A0207C5B6D007E6E35 /* VTPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTPageViewController.h; sourceTree = "<group>"; };
+		09C638A1207C5B6D007E6E35 /* VTReadModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTReadModelController.h; sourceTree = "<group>"; };
+		09C638A2207C5B6E007E6E35 /* VTReadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTReadViewController.m; sourceTree = "<group>"; };
+		09C638A3207C5B6E007E6E35 /* VTReadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTReadViewController.h; sourceTree = "<group>"; };
+		09C638A4207C5B6E007E6E35 /* VTPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTPageViewController.m; sourceTree = "<group>"; };
+		09C638A5207C5B6E007E6E35 /* VTReadDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTReadDataViewController.h; sourceTree = "<group>"; };
+		09C638A6207C5B6E007E6E35 /* VTReadModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTReadModelController.m; sourceTree = "<group>"; };
+		09C638A7207C5B6E007E6E35 /* VTReadDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTReadDataViewController.m; sourceTree = "<group>"; };
+		09C638B0207C5BB3007E6E35 /* VTReaderManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTReaderManager.h; sourceTree = "<group>"; };
+		09C638B1207C5BB3007E6E35 /* VTReaderManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTReaderManager.m; sourceTree = "<group>"; };
+		09C638B4207C5D88007E6E35 /* VTEnums.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTEnums.m; sourceTree = "<group>"; };
+		09C638B5207C5D88007E6E35 /* VTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTConstants.h; sourceTree = "<group>"; };
+		09C638B6207C5D88007E6E35 /* VTEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTEnums.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +162,172 @@
 		09C637F9207C57DA007E6E35 /* VTReader */ = {
 			isa = PBXGroup;
 			children = (
+				09C6383B207C5A65007E6E35 /* Classes */,
+				09C6383A207C5A5C007E6E35 /* Sources */,
+				09C63839207C5A51007E6E35 /* Thirds */,
 				09C637FA207C57DA007E6E35 /* VTReader.h */,
 				09C637FB207C57DA007E6E35 /* Info.plist */,
 			);
 			path = VTReader;
+			sourceTree = "<group>";
+		};
+		09C63839207C5A51007E6E35 /* Thirds */ = {
+			isa = PBXGroup;
+			children = (
+				09C63843207C5B0A007E6E35 /* SSZipArchive */,
+			);
+			path = Thirds;
+			sourceTree = "<group>";
+		};
+		09C6383A207C5A5C007E6E35 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				09C63841207C5AE5007E6E35 /* VTReader.pch */,
+				09C638B5207C5D88007E6E35 /* VTConstants.h */,
+				09C638B6207C5D88007E6E35 /* VTEnums.h */,
+				09C638B4207C5D88007E6E35 /* VTEnums.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		09C6383B207C5A65007E6E35 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				09C63840207C5AA3007E6E35 /* Catagory */,
+				09C6383F207C5A9D007E6E35 /* Tools */,
+				09C6383E207C5A95007E6E35 /* Commons */,
+				09C6383D207C5A8E007E6E35 /* Controllers */,
+				09C6383C207C5A87007E6E35 /* Models */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		09C6383C207C5A87007E6E35 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		09C6383D207C5A8E007E6E35 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				09C6389F207C5B60007E6E35 /* Reader */,
+				09C63892207C5B5B007E6E35 /* Base */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		09C6383E207C5A95007E6E35 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		09C6383F207C5A9D007E6E35 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				09C638B0207C5BB3007E6E35 /* VTReaderManager.h */,
+				09C638B1207C5BB3007E6E35 /* VTReaderManager.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		09C63840207C5AA3007E6E35 /* Catagory */ = {
+			isa = PBXGroup;
+			children = (
+				09C6388A207C5B34007E6E35 /* NSString+VTPhoneInfo.h */,
+				09C6388D207C5B34007E6E35 /* NSString+VTPhoneInfo.m */,
+				09C6388C207C5B34007E6E35 /* NSString+VTSandBox.h */,
+				09C6388B207C5B34007E6E35 /* NSString+VTSandBox.m */,
+			);
+			path = Catagory;
+			sourceTree = "<group>";
+		};
+		09C63843207C5B0A007E6E35 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				09C63844207C5B0A007E6E35 /* aes */,
+				09C6385A207C5B0A007E6E35 /* minizip */,
+				09C63864207C5B0A007E6E35 /* SSZipArchive.h */,
+				09C63865207C5B0A007E6E35 /* SSZipArchive.m */,
+				09C63866207C5B0A007E6E35 /* SSZipCommon.h */,
+				09C63867207C5B0A007E6E35 /* ZipArchive.h */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		09C63844207C5B0A007E6E35 /* aes */ = {
+			isa = PBXGroup;
+			children = (
+				09C63845207C5B0A007E6E35 /* aes.h */,
+				09C63846207C5B0A007E6E35 /* aes_via_ace.h */,
+				09C63847207C5B0A007E6E35 /* aescrypt.c */,
+				09C63848207C5B0A007E6E35 /* aeskey.c */,
+				09C63849207C5B0A007E6E35 /* aesopt.h */,
+				09C6384A207C5B0A007E6E35 /* aestab.c */,
+				09C6384B207C5B0A007E6E35 /* aestab.h */,
+				09C6384C207C5B0A007E6E35 /* brg_endian.h */,
+				09C6384D207C5B0A007E6E35 /* brg_types.h */,
+				09C6384E207C5B0A007E6E35 /* entropy.c */,
+				09C6384F207C5B0A007E6E35 /* entropy.h */,
+				09C63850207C5B0A007E6E35 /* fileenc.c */,
+				09C63851207C5B0A007E6E35 /* fileenc.h */,
+				09C63852207C5B0A007E6E35 /* hmac.c */,
+				09C63853207C5B0A007E6E35 /* hmac.h */,
+				09C63854207C5B0A007E6E35 /* prng.c */,
+				09C63855207C5B0A007E6E35 /* prng.h */,
+				09C63856207C5B0A007E6E35 /* pwd2key.c */,
+				09C63857207C5B0A007E6E35 /* pwd2key.h */,
+				09C63858207C5B0A007E6E35 /* sha1.c */,
+				09C63859207C5B0A007E6E35 /* sha1.h */,
+			);
+			path = aes;
+			sourceTree = "<group>";
+		};
+		09C6385A207C5B0A007E6E35 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				09C6385B207C5B0A007E6E35 /* crypt.h */,
+				09C6385C207C5B0A007E6E35 /* ioapi.c */,
+				09C6385D207C5B0A007E6E35 /* ioapi.h */,
+				09C6385E207C5B0A007E6E35 /* mztools.c */,
+				09C6385F207C5B0A007E6E35 /* mztools.h */,
+				09C63860207C5B0A007E6E35 /* unzip.c */,
+				09C63861207C5B0A007E6E35 /* unzip.h */,
+				09C63862207C5B0A007E6E35 /* zip.c */,
+				09C63863207C5B0A007E6E35 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		09C63892207C5B5B007E6E35 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				09C63893207C5B5B007E6E35 /* VTBaseNavigationController.h */,
+				09C63894207C5B5B007E6E35 /* VTBaseNavigationController.m */,
+				09C63895207C5B5B007E6E35 /* VTBaseView.h */,
+				09C63896207C5B5B007E6E35 /* VTBaseView.m */,
+				09C63897207C5B5B007E6E35 /* VTBaseViewController.h */,
+				09C63898207C5B5B007E6E35 /* VTBaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		09C6389F207C5B60007E6E35 /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				09C638A0207C5B6D007E6E35 /* VTPageViewController.h */,
+				09C638A4207C5B6E007E6E35 /* VTPageViewController.m */,
+				09C638A5207C5B6E007E6E35 /* VTReadDataViewController.h */,
+				09C638A7207C5B6E007E6E35 /* VTReadDataViewController.m */,
+				09C638A1207C5B6D007E6E35 /* VTReadModelController.h */,
+				09C638A6207C5B6E007E6E35 /* VTReadModelController.m */,
+				09C638A3207C5B6E007E6E35 /* VTReadViewController.h */,
+				09C638A2207C5B6E007E6E35 /* VTReadViewController.m */,
+			);
+			name = Reader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +337,40 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09C63885207C5B0A007E6E35 /* zip.h in Headers */,
+				09C638B8207C5D89007E6E35 /* VTConstants.h in Headers */,
+				09C63876207C5B0A007E6E35 /* hmac.h in Headers */,
+				09C63870207C5B0A007E6E35 /* brg_types.h in Headers */,
+				09C6386C207C5B0A007E6E35 /* aesopt.h in Headers */,
+				09C63868207C5B0A007E6E35 /* aes.h in Headers */,
+				09C63889207C5B0A007E6E35 /* ZipArchive.h in Headers */,
+				09C63874207C5B0A007E6E35 /* fileenc.h in Headers */,
+				09C63881207C5B0A007E6E35 /* mztools.h in Headers */,
+				09C6386E207C5B0A007E6E35 /* aestab.h in Headers */,
+				09C638A9207C5B6E007E6E35 /* VTReadModelController.h in Headers */,
+				09C6389D207C5B5B007E6E35 /* VTBaseViewController.h in Headers */,
+				09C638A8207C5B6E007E6E35 /* VTPageViewController.h in Headers */,
+				09C63888207C5B0A007E6E35 /* SSZipCommon.h in Headers */,
+				09C6389B207C5B5B007E6E35 /* VTBaseView.h in Headers */,
+				09C63842207C5AE5007E6E35 /* VTReader.pch in Headers */,
+				09C6387C207C5B0A007E6E35 /* sha1.h in Headers */,
+				09C638B9207C5D89007E6E35 /* VTEnums.h in Headers */,
+				09C638AD207C5B6E007E6E35 /* VTReadDataViewController.h in Headers */,
+				09C63878207C5B0A007E6E35 /* prng.h in Headers */,
+				09C6388E207C5B34007E6E35 /* NSString+VTPhoneInfo.h in Headers */,
+				09C63886207C5B0A007E6E35 /* SSZipArchive.h in Headers */,
+				09C6387D207C5B0A007E6E35 /* crypt.h in Headers */,
+				09C63872207C5B0A007E6E35 /* entropy.h in Headers */,
+				09C63899207C5B5B007E6E35 /* VTBaseNavigationController.h in Headers */,
 				09C637FC207C57DA007E6E35 /* VTReader.h in Headers */,
+				09C63869207C5B0A007E6E35 /* aes_via_ace.h in Headers */,
+				09C6387A207C5B0A007E6E35 /* pwd2key.h in Headers */,
+				09C63883207C5B0A007E6E35 /* unzip.h in Headers */,
+				09C6386F207C5B0A007E6E35 /* brg_endian.h in Headers */,
+				09C638AB207C5B6E007E6E35 /* VTReadViewController.h in Headers */,
+				09C63890207C5B34007E6E35 /* NSString+VTSandBox.h in Headers */,
+				09C6387F207C5B0A007E6E35 /* ioapi.h in Headers */,
+				09C638B2207C5BB3007E6E35 /* VTReaderManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +442,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09C63879207C5B0A007E6E35 /* pwd2key.c in Sources */,
+				09C63875207C5B0A007E6E35 /* hmac.c in Sources */,
+				09C638AA207C5B6E007E6E35 /* VTReadViewController.m in Sources */,
+				09C6386A207C5B0A007E6E35 /* aescrypt.c in Sources */,
+				09C6387B207C5B0A007E6E35 /* sha1.c in Sources */,
+				09C63891207C5B34007E6E35 /* NSString+VTPhoneInfo.m in Sources */,
+				09C6387E207C5B0A007E6E35 /* ioapi.c in Sources */,
+				09C63880207C5B0A007E6E35 /* mztools.c in Sources */,
+				09C63882207C5B0A007E6E35 /* unzip.c in Sources */,
+				09C6389A207C5B5B007E6E35 /* VTBaseNavigationController.m in Sources */,
+				09C6389C207C5B5B007E6E35 /* VTBaseView.m in Sources */,
+				09C6386D207C5B0A007E6E35 /* aestab.c in Sources */,
+				09C638B3207C5BB3007E6E35 /* VTReaderManager.m in Sources */,
+				09C6388F207C5B34007E6E35 /* NSString+VTSandBox.m in Sources */,
+				09C6386B207C5B0A007E6E35 /* aeskey.c in Sources */,
+				09C63873207C5B0A007E6E35 /* fileenc.c in Sources */,
+				09C638AF207C5B6E007E6E35 /* VTReadDataViewController.m in Sources */,
+				09C6389E207C5B5B007E6E35 /* VTBaseViewController.m in Sources */,
+				09C63884207C5B0A007E6E35 /* zip.c in Sources */,
+				09C63877207C5B0A007E6E35 /* prng.c in Sources */,
+				09C638B7207C5D89007E6E35 /* VTEnums.m in Sources */,
+				09C638AC207C5B6E007E6E35 /* VTPageViewController.m in Sources */,
+				09C638AE207C5B6E007E6E35 /* VTReadModelController.m in Sources */,
+				09C63887207C5B0A007E6E35 /* SSZipArchive.m in Sources */,
+				09C63871207C5B0A007E6E35 /* entropy.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,10 +588,12 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/VTReader/Sources/VTReader.pch";
 				INFOPLIST_FILE = VTReader/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -263,6 +601,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vtears.Reader.VTReader;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -272,10 +611,12 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/VTReader/Sources/VTReader.pch";
 				INFOPLIST_FILE = VTReader/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -283,6 +624,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vtears.Reader.VTReader;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
