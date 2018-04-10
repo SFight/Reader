@@ -15,6 +15,7 @@
 		09C63828207C5856007E6E35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C63827207C5856007E6E35 /* main.m */; };
 		09C63834207C58E1007E6E35 /* VTReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C63833207C58CD007E6E35 /* VTReader.framework */; };
 		09C63835207C58E1007E6E35 /* VTReader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09C63833207C58CD007E6E35 /* VTReader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		09C638BB207C5E38007E6E35 /* 三言二拍（插图版）.epub in Resources */ = {isa = PBXBuildFile; fileRef = 09C638BA207C5E38007E6E35 /* 三言二拍（插图版）.epub */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		09C63826207C5856007E6E35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09C63827207C5856007E6E35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		09C6382E207C58CD007E6E35 /* VTReader.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VTReader.xcodeproj; path = ../../VTReader/VTReader.xcodeproj; sourceTree = "<group>"; };
+		09C638BA207C5E38007E6E35 /* 三言二拍（插图版）.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "三言二拍（插图版）.epub"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				09C63819207C5856007E6E35 /* AppDelegate.m */,
 				09C6381B207C5856007E6E35 /* ViewController.h */,
 				09C6381C207C5856007E6E35 /* ViewController.m */,
+				09C638BA207C5E38007E6E35 /* 三言二拍（插图版）.epub */,
 				09C6381E207C5856007E6E35 /* Main.storyboard */,
 				09C63821207C5856007E6E35 /* Assets.xcassets */,
 				09C63823207C5856007E6E35 /* LaunchScreen.storyboard */,
@@ -194,6 +197,7 @@
 				09C63825207C5856007E6E35 /* LaunchScreen.storyboard in Resources */,
 				09C63822207C5856007E6E35 /* Assets.xcassets in Resources */,
 				09C63820207C5856007E6E35 /* Main.storyboard in Resources */,
+				09C638BB207C5E38007E6E35 /* 三言二拍（插图版）.epub in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
