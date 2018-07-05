@@ -9,9 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#import "VTDataReader.h"
+
 @class VTReadDataViewController;
 
 @interface VTReadModelController : NSObject<UIPageViewControllerDataSource>
+
+@property (nonatomic, strong) VTDataReader *dataReader;
 
 /**
  * 生成开始的控制器

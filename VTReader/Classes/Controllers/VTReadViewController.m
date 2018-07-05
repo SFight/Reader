@@ -10,6 +10,8 @@
 #import "VTPageViewController.h"
 #import "VTReadModelController.h"
 
+#import "VTReaderConfig.h"
+
 @interface VTReadViewController ()
 
 /** 翻页控制器容器 */
@@ -33,12 +35,22 @@
 }
 
 #pragma mark - 生命周期
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    // 归档，存储阅读数据
+    [[VTReaderConfig sharedInstance] archive];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
     _pageVC = [[VTPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     self.pageVC.dataSource = self.modelController;
+    
+    // 设置控制器的数据源
+    self.modelController.dataReader = self.dataReader;
     
     UIViewController *startingViewController = (UIViewController *)[self.modelController generateStartViewController];
     NSArray *viewControllers = @[startingViewController];

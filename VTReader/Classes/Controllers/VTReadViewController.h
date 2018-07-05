@@ -8,6 +8,10 @@
 
 #import "VTBaseViewController.h"
 
+#import "VTDataReader.h"
+
 @interface VTReadViewController : VTBaseViewController
+
+@property (nonatomic, strong) VTDataReader *dataReader;
 
 @end

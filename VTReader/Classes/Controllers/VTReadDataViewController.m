@@ -8,6 +8,8 @@
 
 #import "VTReadDataViewController.h"
 
+#import "VTReadDataView.h"
+
 @interface VTReadDataViewController ()
 
 @end
@@ -19,6 +21,9 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor purpleColor];
+    
+    VTReadDataView *dataView = [[VTReadDataView alloc] initWithFrame:self.view.bounds chapter:self.chapter page:self.page];
+    [self.view addSubview:dataView];
 }
 
 - (void)didReceiveMemoryWarning {
