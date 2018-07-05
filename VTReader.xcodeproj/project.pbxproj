@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090D803B207CBA3500B0E433 /* VTXmlParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 090D8039207CBA3500B0E433 /* VTXmlParser.h */; };
+		090D803C207CBA3500B0E433 /* VTXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 090D803A207CBA3500B0E433 /* VTXmlParser.m */; };
+		090D803F207CC8B300B0E433 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 090D803E207CC8B300B0E433 /* libxml2.tbd */; };
 		09C637FC207C57DA007E6E35 /* VTReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C637FA207C57DA007E6E35 /* VTReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09C63842207C5AE5007E6E35 /* VTReader.pch in Headers */ = {isa = PBXBuildFile; fileRef = 09C63841207C5AE5007E6E35 /* VTReader.pch */; };
 		09C63868207C5B0A007E6E35 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C63845207C5B0A007E6E35 /* aes.h */; };
@@ -66,9 +69,94 @@
 		09C638B7207C5D89007E6E35 /* VTEnums.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C638B4207C5D88007E6E35 /* VTEnums.m */; };
 		09C638B8207C5D89007E6E35 /* VTConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C638B5207C5D88007E6E35 /* VTConstants.h */; };
 		09C638B9207C5D89007E6E35 /* VTEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C638B6207C5D88007E6E35 /* VTEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09C638BF207C5FC5007E6E35 /* VTEpubManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C638BD207C5FC5007E6E35 /* VTEpubManager.h */; };
+		09C638C0207C5FC5007E6E35 /* VTEpubManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C638BE207C5FC5007E6E35 /* VTEpubManager.m */; };
+		09C638C4207C5FE8007E6E35 /* VTTXTManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C638C2207C5FE8007E6E35 /* VTTXTManager.h */; };
+		09C638C5207C5FE8007E6E35 /* VTTXTManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C638C3207C5FE8007E6E35 /* VTTXTManager.m */; };
+		09C638CD207C6015007E6E35 /* VTPDFManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C638CB207C6015007E6E35 /* VTPDFManager.h */; };
+		09C638CE207C6015007E6E35 /* VTPDFManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C638CC207C6015007E6E35 /* VTPDFManager.m */; };
+		09C638D1207C62B8007E6E35 /* VTDataReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C638CF207C62B8007E6E35 /* VTDataReader.h */; };
+		09C638D2207C62B8007E6E35 /* VTDataReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C638D0207C62B8007E6E35 /* VTDataReader.m */; };
+		09C638D5207C62C9007E6E35 /* VTDataReaderChapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C638D3207C62C9007E6E35 /* VTDataReaderChapter.h */; };
+		09C638D6207C62C9007E6E35 /* VTDataReaderChapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C638D4207C62C9007E6E35 /* VTDataReaderChapter.m */; };
+		09C638DA207C62E2007E6E35 /* VTDataBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C638D8207C62E2007E6E35 /* VTDataBase.h */; };
+		09C638DB207C62E2007E6E35 /* VTDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C638D9207C62E2007E6E35 /* VTDataBase.m */; };
+		09E2DB25207F6C97000A03C2 /* VTReadDataView.h in Headers */ = {isa = PBXBuildFile; fileRef = 09E2DB23207F6C97000A03C2 /* VTReadDataView.h */; };
+		09E2DB26207F6C97000A03C2 /* VTReadDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E2DB24207F6C97000A03C2 /* VTReadDataView.m */; };
+		09E2DB70208078E9000A03C2 /* VTReaderConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 09E2DB6E208078E9000A03C2 /* VTReaderConfig.h */; };
+		09E2DB71208078E9000A03C2 /* VTReaderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E2DB6F208078E9000A03C2 /* VTReaderConfig.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		52CA1D5720C93E03006923E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52CA1D4A20C93E02006923E8 /* DTCoreText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = DemoApp;
+		};
+		52CA1D5920C93E03006923E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52CA1D4A20C93E02006923E8 /* DTCoreText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A70F11DE148632CD009202BF;
+			remoteInfo = "Static Library";
+		};
+		52CA1D5B20C93E03006923E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52CA1D4A20C93E02006923E8 /* DTCoreText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A788CA681486456100E1AFD9;
+			remoteInfo = UnitTest;
+		};
+		52CA1D5D20C93E03006923E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52CA1D4A20C93E02006923E8 /* DTCoreText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A78D9F781965B7DD00C80986;
+			remoteInfo = MacUnitTest;
+		};
+		52CA1D5F20C93E03006923E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52CA1D4A20C93E02006923E8 /* DTCoreText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A7F7EFCD1573603100F5A4D0;
+			remoteInfo = "Static Library (no DTFoundation)";
+		};
+		52CA1D6120C93E03006923E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52CA1D4A20C93E02006923E8 /* DTCoreText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E2262DC61638331500BFDAD7;
+			remoteInfo = "DTCoreText (Mac)";
+		};
+		52CA1D6320C93E03006923E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52CA1D4A20C93E02006923E8 /* DTCoreText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A79BA6201B46A1FB0086C2F6;
+			remoteInfo = "DTCoreText (iOS)";
+		};
+		52CA1D6520C93E03006923E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52CA1D4A20C93E02006923E8 /* DTCoreText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 94D24B961D4AFE7800C7F33C;
+			remoteInfo = "DTCoreText (tvOS)";
+		};
+		52CA1D6720C93E25006923E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52CA1D4A20C93E02006923E8 /* DTCoreText.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A79BA61F1B46A1FB0086C2F6;
+			remoteInfo = "DTCoreText (iOS)";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		090D8039207CBA3500B0E433 /* VTXmlParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTXmlParser.h; sourceTree = "<group>"; };
+		090D803A207CBA3500B0E433 /* VTXmlParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTXmlParser.m; sourceTree = "<group>"; };
+		090D803E207CC8B300B0E433 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		09C637F7207C57DA007E6E35 /* VTReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VTReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C637FA207C57DA007E6E35 /* VTReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTReader.h; sourceTree = "<group>"; };
 		09C637FB207C57DA007E6E35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,6 +218,24 @@
 		09C638B4207C5D88007E6E35 /* VTEnums.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTEnums.m; sourceTree = "<group>"; };
 		09C638B5207C5D88007E6E35 /* VTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTConstants.h; sourceTree = "<group>"; };
 		09C638B6207C5D88007E6E35 /* VTEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTEnums.h; sourceTree = "<group>"; };
+		09C638BD207C5FC5007E6E35 /* VTEpubManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTEpubManager.h; sourceTree = "<group>"; };
+		09C638BE207C5FC5007E6E35 /* VTEpubManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTEpubManager.m; sourceTree = "<group>"; };
+		09C638C2207C5FE8007E6E35 /* VTTXTManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTTXTManager.h; sourceTree = "<group>"; };
+		09C638C3207C5FE8007E6E35 /* VTTXTManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTTXTManager.m; sourceTree = "<group>"; };
+		09C638CB207C6015007E6E35 /* VTPDFManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTPDFManager.h; sourceTree = "<group>"; };
+		09C638CC207C6015007E6E35 /* VTPDFManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTPDFManager.m; sourceTree = "<group>"; };
+		09C638CF207C62B8007E6E35 /* VTDataReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTDataReader.h; sourceTree = "<group>"; };
+		09C638D0207C62B8007E6E35 /* VTDataReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTDataReader.m; sourceTree = "<group>"; };
+		09C638D3207C62C9007E6E35 /* VTDataReaderChapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTDataReaderChapter.h; sourceTree = "<group>"; };
+		09C638D4207C62C9007E6E35 /* VTDataReaderChapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTDataReaderChapter.m; sourceTree = "<group>"; };
+		09C638D8207C62E2007E6E35 /* VTDataBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTDataBase.h; sourceTree = "<group>"; };
+		09C638D9207C62E2007E6E35 /* VTDataBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTDataBase.m; sourceTree = "<group>"; };
+		09E2DB23207F6C97000A03C2 /* VTReadDataView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTReadDataView.h; sourceTree = "<group>"; };
+		09E2DB24207F6C97000A03C2 /* VTReadDataView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTReadDataView.m; sourceTree = "<group>"; };
+		09E2DB6D207F795F000A03C2 /* DTFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DTFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09E2DB6E208078E9000A03C2 /* VTReaderConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTReaderConfig.h; sourceTree = "<group>"; };
+		09E2DB6F208078E9000A03C2 /* VTReaderConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTReaderConfig.m; sourceTree = "<group>"; };
+		52CA1D4A20C93E02006923E8 /* DTCoreText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DTCoreText.xcodeproj; path = ../../Externals/DTCoreText/DTCoreText.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,17 +243,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				090D803F207CC8B300B0E433 /* libxml2.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		090D8038207CBA1000B0E433 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				090D8039207CBA3500B0E433 /* VTXmlParser.h */,
+				090D803A207CBA3500B0E433 /* VTXmlParser.m */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		090D803D207CC8B200B0E433 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09E2DB6D207F795F000A03C2 /* DTFoundation.framework */,
+				090D803E207CC8B300B0E433 /* libxml2.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		09C637ED207C57DA007E6E35 = {
 			isa = PBXGroup;
 			children = (
 				09C637F9207C57DA007E6E35 /* VTReader */,
 				09C637F8207C57DA007E6E35 /* Products */,
+				090D803D207CC8B200B0E433 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,6 +288,7 @@
 		09C637F9207C57DA007E6E35 /* VTReader */ = {
 			isa = PBXGroup;
 			children = (
+				52CA1D4A20C93E02006923E8 /* DTCoreText.xcodeproj */,
 				09C6383B207C5A65007E6E35 /* Classes */,
 				09C6383A207C5A5C007E6E35 /* Sources */,
 				09C63839207C5A51007E6E35 /* Thirds */,
@@ -205,6 +332,11 @@
 		09C6383C207C5A87007E6E35 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				09C638D7207C62D8007E6E35 /* Base */,
+				09C638CF207C62B8007E6E35 /* VTDataReader.h */,
+				09C638D0207C62B8007E6E35 /* VTDataReader.m */,
+				09C638D3207C62C9007E6E35 /* VTDataReaderChapter.h */,
+				09C638D4207C62C9007E6E35 /* VTDataReaderChapter.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -228,8 +360,14 @@
 		09C6383F207C5A9D007E6E35 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				090D8038207CBA1000B0E433 /* Parser */,
+				09C638C6207C5FF3007E6E35 /* PDF */,
+				09C638C1207C5FCB007E6E35 /* TXT */,
+				09C638BC207C5FA9007E6E35 /* Epub */,
 				09C638B0207C5BB3007E6E35 /* VTReaderManager.h */,
 				09C638B1207C5BB3007E6E35 /* VTReaderManager.m */,
+				09E2DB6E208078E9000A03C2 /* VTReaderConfig.h */,
+				09E2DB6F208078E9000A03C2 /* VTReaderConfig.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -326,8 +464,61 @@
 				09C638A6207C5B6E007E6E35 /* VTReadModelController.m */,
 				09C638A3207C5B6E007E6E35 /* VTReadViewController.h */,
 				09C638A2207C5B6E007E6E35 /* VTReadViewController.m */,
+				09E2DB23207F6C97000A03C2 /* VTReadDataView.h */,
+				09E2DB24207F6C97000A03C2 /* VTReadDataView.m */,
 			);
 			name = Reader;
+			sourceTree = "<group>";
+		};
+		09C638BC207C5FA9007E6E35 /* Epub */ = {
+			isa = PBXGroup;
+			children = (
+				09C638BD207C5FC5007E6E35 /* VTEpubManager.h */,
+				09C638BE207C5FC5007E6E35 /* VTEpubManager.m */,
+			);
+			path = Epub;
+			sourceTree = "<group>";
+		};
+		09C638C1207C5FCB007E6E35 /* TXT */ = {
+			isa = PBXGroup;
+			children = (
+				09C638C2207C5FE8007E6E35 /* VTTXTManager.h */,
+				09C638C3207C5FE8007E6E35 /* VTTXTManager.m */,
+			);
+			path = TXT;
+			sourceTree = "<group>";
+		};
+		09C638C6207C5FF3007E6E35 /* PDF */ = {
+			isa = PBXGroup;
+			children = (
+				09C638CB207C6015007E6E35 /* VTPDFManager.h */,
+				09C638CC207C6015007E6E35 /* VTPDFManager.m */,
+			);
+			path = PDF;
+			sourceTree = "<group>";
+		};
+		09C638D7207C62D8007E6E35 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				09C638D8207C62E2007E6E35 /* VTDataBase.h */,
+				09C638D9207C62E2007E6E35 /* VTDataBase.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		52CA1D4B20C93E02006923E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52CA1D5820C93E03006923E8 /* RTDemoApp.app */,
+				52CA1D5A20C93E03006923E8 /* libDTCoreText.a */,
+				52CA1D5C20C93E03006923E8 /* UnitTest.xctest */,
+				52CA1D5E20C93E03006923E8 /* MacUnitTest.xctest */,
+				52CA1D6020C93E03006923E8 /* libDTCoreText_no_DTFoundation.a */,
+				52CA1D6220C93E03006923E8 /* DTCoreText.framework */,
+				52CA1D6420C93E03006923E8 /* DTCoreText.framework */,
+				52CA1D6620C93E03006923E8 /* DTCoreText.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,11 +529,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				09C63885207C5B0A007E6E35 /* zip.h in Headers */,
+				09C638DA207C62E2007E6E35 /* VTDataBase.h in Headers */,
 				09C638B8207C5D89007E6E35 /* VTConstants.h in Headers */,
 				09C63876207C5B0A007E6E35 /* hmac.h in Headers */,
 				09C63870207C5B0A007E6E35 /* brg_types.h in Headers */,
 				09C6386C207C5B0A007E6E35 /* aesopt.h in Headers */,
+				09C638C4207C5FE8007E6E35 /* VTTXTManager.h in Headers */,
 				09C63868207C5B0A007E6E35 /* aes.h in Headers */,
+				09C638BF207C5FC5007E6E35 /* VTEpubManager.h in Headers */,
 				09C63889207C5B0A007E6E35 /* ZipArchive.h in Headers */,
 				09C63874207C5B0A007E6E35 /* fileenc.h in Headers */,
 				09C63881207C5B0A007E6E35 /* mztools.h in Headers */,
@@ -353,20 +547,26 @@
 				09C63888207C5B0A007E6E35 /* SSZipCommon.h in Headers */,
 				09C6389B207C5B5B007E6E35 /* VTBaseView.h in Headers */,
 				09C63842207C5AE5007E6E35 /* VTReader.pch in Headers */,
+				090D803B207CBA3500B0E433 /* VTXmlParser.h in Headers */,
 				09C6387C207C5B0A007E6E35 /* sha1.h in Headers */,
 				09C638B9207C5D89007E6E35 /* VTEnums.h in Headers */,
 				09C638AD207C5B6E007E6E35 /* VTReadDataViewController.h in Headers */,
+				09E2DB25207F6C97000A03C2 /* VTReadDataView.h in Headers */,
+				09C638D5207C62C9007E6E35 /* VTDataReaderChapter.h in Headers */,
 				09C63878207C5B0A007E6E35 /* prng.h in Headers */,
 				09C6388E207C5B34007E6E35 /* NSString+VTPhoneInfo.h in Headers */,
 				09C63886207C5B0A007E6E35 /* SSZipArchive.h in Headers */,
 				09C6387D207C5B0A007E6E35 /* crypt.h in Headers */,
+				09C638CD207C6015007E6E35 /* VTPDFManager.h in Headers */,
 				09C63872207C5B0A007E6E35 /* entropy.h in Headers */,
 				09C63899207C5B5B007E6E35 /* VTBaseNavigationController.h in Headers */,
 				09C637FC207C57DA007E6E35 /* VTReader.h in Headers */,
 				09C63869207C5B0A007E6E35 /* aes_via_ace.h in Headers */,
+				09E2DB70208078E9000A03C2 /* VTReaderConfig.h in Headers */,
 				09C6387A207C5B0A007E6E35 /* pwd2key.h in Headers */,
 				09C63883207C5B0A007E6E35 /* unzip.h in Headers */,
 				09C6386F207C5B0A007E6E35 /* brg_endian.h in Headers */,
+				09C638D1207C62B8007E6E35 /* VTDataReader.h in Headers */,
 				09C638AB207C5B6E007E6E35 /* VTReadViewController.h in Headers */,
 				09C63890207C5B34007E6E35 /* NSString+VTSandBox.h in Headers */,
 				09C6387F207C5B0A007E6E35 /* ioapi.h in Headers */,
@@ -389,6 +589,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				52CA1D6820C93E25006923E8 /* PBXTargetDependency */,
 			);
 			name = VTReader;
 			productName = VTReader;
@@ -420,12 +621,77 @@
 			mainGroup = 09C637ED207C57DA007E6E35;
 			productRefGroup = 09C637F8207C57DA007E6E35 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 52CA1D4B20C93E02006923E8 /* Products */;
+					ProjectRef = 52CA1D4A20C93E02006923E8 /* DTCoreText.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				09C637F6207C57DA007E6E35 /* VTReader */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		52CA1D5820C93E03006923E8 /* RTDemoApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = RTDemoApp.app;
+			remoteRef = 52CA1D5720C93E03006923E8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52CA1D5A20C93E03006923E8 /* libDTCoreText.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDTCoreText.a;
+			remoteRef = 52CA1D5920C93E03006923E8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52CA1D5C20C93E03006923E8 /* UnitTest.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTest.xctest;
+			remoteRef = 52CA1D5B20C93E03006923E8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52CA1D5E20C93E03006923E8 /* MacUnitTest.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MacUnitTest.xctest;
+			remoteRef = 52CA1D5D20C93E03006923E8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52CA1D6020C93E03006923E8 /* libDTCoreText_no_DTFoundation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDTCoreText_no_DTFoundation.a;
+			remoteRef = 52CA1D5F20C93E03006923E8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52CA1D6220C93E03006923E8 /* DTCoreText.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DTCoreText.framework;
+			remoteRef = 52CA1D6120C93E03006923E8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52CA1D6420C93E03006923E8 /* DTCoreText.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DTCoreText.framework;
+			remoteRef = 52CA1D6320C93E03006923E8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52CA1D6620C93E03006923E8 /* DTCoreText.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DTCoreText.framework;
+			remoteRef = 52CA1D6520C93E03006923E8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		09C637F5207C57DA007E6E35 /* Resources */ = {
@@ -442,6 +708,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09E2DB26207F6C97000A03C2 /* VTReadDataView.m in Sources */,
 				09C63879207C5B0A007E6E35 /* pwd2key.c in Sources */,
 				09C63875207C5B0A007E6E35 /* hmac.c in Sources */,
 				09C638AA207C5B6E007E6E35 /* VTReadViewController.m in Sources */,
@@ -449,11 +716,17 @@
 				09C6387B207C5B0A007E6E35 /* sha1.c in Sources */,
 				09C63891207C5B34007E6E35 /* NSString+VTPhoneInfo.m in Sources */,
 				09C6387E207C5B0A007E6E35 /* ioapi.c in Sources */,
+				09E2DB71208078E9000A03C2 /* VTReaderConfig.m in Sources */,
 				09C63880207C5B0A007E6E35 /* mztools.c in Sources */,
 				09C63882207C5B0A007E6E35 /* unzip.c in Sources */,
+				09C638D2207C62B8007E6E35 /* VTDataReader.m in Sources */,
 				09C6389A207C5B5B007E6E35 /* VTBaseNavigationController.m in Sources */,
+				09C638DB207C62E2007E6E35 /* VTDataBase.m in Sources */,
 				09C6389C207C5B5B007E6E35 /* VTBaseView.m in Sources */,
+				09C638D6207C62C9007E6E35 /* VTDataReaderChapter.m in Sources */,
 				09C6386D207C5B0A007E6E35 /* aestab.c in Sources */,
+				09C638CE207C6015007E6E35 /* VTPDFManager.m in Sources */,
+				090D803C207CBA3500B0E433 /* VTXmlParser.m in Sources */,
 				09C638B3207C5BB3007E6E35 /* VTReaderManager.m in Sources */,
 				09C6388F207C5B34007E6E35 /* NSString+VTSandBox.m in Sources */,
 				09C6386B207C5B0A007E6E35 /* aeskey.c in Sources */,
@@ -461,7 +734,9 @@
 				09C638AF207C5B6E007E6E35 /* VTReadDataViewController.m in Sources */,
 				09C6389E207C5B5B007E6E35 /* VTBaseViewController.m in Sources */,
 				09C63884207C5B0A007E6E35 /* zip.c in Sources */,
+				09C638C0207C5FC5007E6E35 /* VTEpubManager.m in Sources */,
 				09C63877207C5B0A007E6E35 /* prng.c in Sources */,
+				09C638C5207C5FE8007E6E35 /* VTTXTManager.m in Sources */,
 				09C638B7207C5D89007E6E35 /* VTEnums.m in Sources */,
 				09C638AC207C5B6E007E6E35 /* VTPageViewController.m in Sources */,
 				09C638AE207C5B6E007E6E35 /* VTReadModelController.m in Sources */,
@@ -471,6 +746,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52CA1D6820C93E25006923E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "DTCoreText (iOS)";
+			targetProxy = 52CA1D6720C93E25006923E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		09C637FD207C57DA007E6E35 /* Debug */ = {
@@ -594,10 +877,12 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/VTReader/Sources/VTReader.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = VTReader/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vtears.Reader.VTReader;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -617,10 +902,12 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/VTReader/Sources/VTReader.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = VTReader/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vtears.Reader.VTReader;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
