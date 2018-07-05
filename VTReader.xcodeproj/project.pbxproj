@@ -88,65 +88,65 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		52CA1D5720C93E03006923E8 /* PBXContainerItemProxy */ = {
+		5237A4D620EE12A70046C61D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 52CA1D4A20C93E02006923E8 /* DTCoreText.xcodeproj */;
+			containerPortal = 5237A4C920EE12A60046C61D /* DTCoreText.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
 			remoteInfo = DemoApp;
 		};
-		52CA1D5920C93E03006923E8 /* PBXContainerItemProxy */ = {
+		5237A4D820EE12A70046C61D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 52CA1D4A20C93E02006923E8 /* DTCoreText.xcodeproj */;
+			containerPortal = 5237A4C920EE12A60046C61D /* DTCoreText.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = A70F11DE148632CD009202BF;
 			remoteInfo = "Static Library";
 		};
-		52CA1D5B20C93E03006923E8 /* PBXContainerItemProxy */ = {
+		5237A4DA20EE12A70046C61D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 52CA1D4A20C93E02006923E8 /* DTCoreText.xcodeproj */;
+			containerPortal = 5237A4C920EE12A60046C61D /* DTCoreText.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = A788CA681486456100E1AFD9;
 			remoteInfo = UnitTest;
 		};
-		52CA1D5D20C93E03006923E8 /* PBXContainerItemProxy */ = {
+		5237A4DC20EE12A70046C61D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 52CA1D4A20C93E02006923E8 /* DTCoreText.xcodeproj */;
+			containerPortal = 5237A4C920EE12A60046C61D /* DTCoreText.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = A78D9F781965B7DD00C80986;
 			remoteInfo = MacUnitTest;
 		};
-		52CA1D5F20C93E03006923E8 /* PBXContainerItemProxy */ = {
+		5237A4DE20EE12A70046C61D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 52CA1D4A20C93E02006923E8 /* DTCoreText.xcodeproj */;
+			containerPortal = 5237A4C920EE12A60046C61D /* DTCoreText.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = A7F7EFCD1573603100F5A4D0;
 			remoteInfo = "Static Library (no DTFoundation)";
 		};
-		52CA1D6120C93E03006923E8 /* PBXContainerItemProxy */ = {
+		5237A4E020EE12A70046C61D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 52CA1D4A20C93E02006923E8 /* DTCoreText.xcodeproj */;
+			containerPortal = 5237A4C920EE12A60046C61D /* DTCoreText.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = E2262DC61638331500BFDAD7;
 			remoteInfo = "DTCoreText (Mac)";
 		};
-		52CA1D6320C93E03006923E8 /* PBXContainerItemProxy */ = {
+		5237A4E220EE12A70046C61D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 52CA1D4A20C93E02006923E8 /* DTCoreText.xcodeproj */;
+			containerPortal = 5237A4C920EE12A60046C61D /* DTCoreText.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = A79BA6201B46A1FB0086C2F6;
 			remoteInfo = "DTCoreText (iOS)";
 		};
-		52CA1D6520C93E03006923E8 /* PBXContainerItemProxy */ = {
+		5237A4E420EE12A70046C61D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 52CA1D4A20C93E02006923E8 /* DTCoreText.xcodeproj */;
+			containerPortal = 5237A4C920EE12A60046C61D /* DTCoreText.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 94D24B961D4AFE7800C7F33C;
 			remoteInfo = "DTCoreText (tvOS)";
 		};
-		52CA1D6720C93E25006923E8 /* PBXContainerItemProxy */ = {
+		5237A4E620EE12B10046C61D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 52CA1D4A20C93E02006923E8 /* DTCoreText.xcodeproj */;
+			containerPortal = 5237A4C920EE12A60046C61D /* DTCoreText.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = A79BA61F1B46A1FB0086C2F6;
 			remoteInfo = "DTCoreText (iOS)";
@@ -235,7 +235,7 @@
 		09E2DB6D207F795F000A03C2 /* DTFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DTFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09E2DB6E208078E9000A03C2 /* VTReaderConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTReaderConfig.h; sourceTree = "<group>"; };
 		09E2DB6F208078E9000A03C2 /* VTReaderConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTReaderConfig.m; sourceTree = "<group>"; };
-		52CA1D4A20C93E02006923E8 /* DTCoreText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DTCoreText.xcodeproj; path = ../../Externals/DTCoreText/DTCoreText.xcodeproj; sourceTree = "<group>"; };
+		5237A4C920EE12A60046C61D /* DTCoreText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DTCoreText.xcodeproj; path = Externals/DTCoreText/DTCoreText.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,7 +288,7 @@
 		09C637F9207C57DA007E6E35 /* VTReader */ = {
 			isa = PBXGroup;
 			children = (
-				52CA1D4A20C93E02006923E8 /* DTCoreText.xcodeproj */,
+				5237A4C920EE12A60046C61D /* DTCoreText.xcodeproj */,
 				09C6383B207C5A65007E6E35 /* Classes */,
 				09C6383A207C5A5C007E6E35 /* Sources */,
 				09C63839207C5A51007E6E35 /* Thirds */,
@@ -506,17 +506,17 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		52CA1D4B20C93E02006923E8 /* Products */ = {
+		5237A4CA20EE12A60046C61D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				52CA1D5820C93E03006923E8 /* RTDemoApp.app */,
-				52CA1D5A20C93E03006923E8 /* libDTCoreText.a */,
-				52CA1D5C20C93E03006923E8 /* UnitTest.xctest */,
-				52CA1D5E20C93E03006923E8 /* MacUnitTest.xctest */,
-				52CA1D6020C93E03006923E8 /* libDTCoreText_no_DTFoundation.a */,
-				52CA1D6220C93E03006923E8 /* DTCoreText.framework */,
-				52CA1D6420C93E03006923E8 /* DTCoreText.framework */,
-				52CA1D6620C93E03006923E8 /* DTCoreText.framework */,
+				5237A4D720EE12A70046C61D /* RTDemoApp.app */,
+				5237A4D920EE12A70046C61D /* libDTCoreText.a */,
+				5237A4DB20EE12A70046C61D /* UnitTest.xctest */,
+				5237A4DD20EE12A70046C61D /* MacUnitTest.xctest */,
+				5237A4DF20EE12A70046C61D /* libDTCoreText_no_DTFoundation.a */,
+				5237A4E120EE12A70046C61D /* DTCoreText.framework */,
+				5237A4E320EE12A70046C61D /* DTCoreText.framework */,
+				5237A4E520EE12A70046C61D /* DTCoreText.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -589,7 +589,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				52CA1D6820C93E25006923E8 /* PBXTargetDependency */,
+				5237A4E720EE12B10046C61D /* PBXTargetDependency */,
 			);
 			name = VTReader;
 			productName = VTReader;
@@ -623,8 +623,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 52CA1D4B20C93E02006923E8 /* Products */;
-					ProjectRef = 52CA1D4A20C93E02006923E8 /* DTCoreText.xcodeproj */;
+					ProductGroup = 5237A4CA20EE12A60046C61D /* Products */;
+					ProjectRef = 5237A4C920EE12A60046C61D /* DTCoreText.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -635,60 +635,60 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		52CA1D5820C93E03006923E8 /* RTDemoApp.app */ = {
+		5237A4D720EE12A70046C61D /* RTDemoApp.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = RTDemoApp.app;
-			remoteRef = 52CA1D5720C93E03006923E8 /* PBXContainerItemProxy */;
+			remoteRef = 5237A4D620EE12A70046C61D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		52CA1D5A20C93E03006923E8 /* libDTCoreText.a */ = {
+		5237A4D920EE12A70046C61D /* libDTCoreText.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libDTCoreText.a;
-			remoteRef = 52CA1D5920C93E03006923E8 /* PBXContainerItemProxy */;
+			remoteRef = 5237A4D820EE12A70046C61D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		52CA1D5C20C93E03006923E8 /* UnitTest.xctest */ = {
+		5237A4DB20EE12A70046C61D /* UnitTest.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = UnitTest.xctest;
-			remoteRef = 52CA1D5B20C93E03006923E8 /* PBXContainerItemProxy */;
+			remoteRef = 5237A4DA20EE12A70046C61D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		52CA1D5E20C93E03006923E8 /* MacUnitTest.xctest */ = {
+		5237A4DD20EE12A70046C61D /* MacUnitTest.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = MacUnitTest.xctest;
-			remoteRef = 52CA1D5D20C93E03006923E8 /* PBXContainerItemProxy */;
+			remoteRef = 5237A4DC20EE12A70046C61D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		52CA1D6020C93E03006923E8 /* libDTCoreText_no_DTFoundation.a */ = {
+		5237A4DF20EE12A70046C61D /* libDTCoreText_no_DTFoundation.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libDTCoreText_no_DTFoundation.a;
-			remoteRef = 52CA1D5F20C93E03006923E8 /* PBXContainerItemProxy */;
+			remoteRef = 5237A4DE20EE12A70046C61D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		52CA1D6220C93E03006923E8 /* DTCoreText.framework */ = {
+		5237A4E120EE12A70046C61D /* DTCoreText.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = DTCoreText.framework;
-			remoteRef = 52CA1D6120C93E03006923E8 /* PBXContainerItemProxy */;
+			remoteRef = 5237A4E020EE12A70046C61D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		52CA1D6420C93E03006923E8 /* DTCoreText.framework */ = {
+		5237A4E320EE12A70046C61D /* DTCoreText.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = DTCoreText.framework;
-			remoteRef = 52CA1D6320C93E03006923E8 /* PBXContainerItemProxy */;
+			remoteRef = 5237A4E220EE12A70046C61D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		52CA1D6620C93E03006923E8 /* DTCoreText.framework */ = {
+		5237A4E520EE12A70046C61D /* DTCoreText.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = DTCoreText.framework;
-			remoteRef = 52CA1D6520C93E03006923E8 /* PBXContainerItemProxy */;
+			remoteRef = 5237A4E420EE12A70046C61D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -748,10 +748,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		52CA1D6820C93E25006923E8 /* PBXTargetDependency */ = {
+		5237A4E720EE12B10046C61D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "DTCoreText (iOS)";
-			targetProxy = 52CA1D6720C93E25006923E8 /* PBXContainerItemProxy */;
+			targetProxy = 5237A4E620EE12B10046C61D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
