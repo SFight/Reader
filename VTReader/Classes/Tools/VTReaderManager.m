@@ -7,7 +7,14 @@
 //
 
 #import "VTReaderManager.h"
-#import "ZipArchive.h"
+
+#import "VTEpubManager.h"
+#import "VTTXTManager.h"
+#import "VTPDFManager.h"
+
+#import "VTReaderConfig.h"
+
+#import "VTReadViewController.h"
 
 @interface VTReaderManager()
 
@@ -48,6 +55,9 @@ static VTReaderManager *_manager = nil;
         return NO;
     }
     
+    // 解档
+    [[VTReaderConfig sharedInstance] unArchive];
+    
     if ([VT_READER_TYPE_TXT isEqualToString:readType]) {
         
         return [self openTxtReaderWithPath:path inViewController:viewController onDismiss:dismissBlock];
@@ -75,12 +85,14 @@ static VTReaderManager *_manager = nil;
 #pragma mark - epub阅读器
 - (BOOL)openEpubReaderWithPath:(NSURL *_Nonnull)epubPath inViewController:(nullable UIViewController *)viewController onDismiss:(DismissBlock)dismissBlock
 {
-    // 1、解压文件到指定目录下
-    NSString *fileName = [[[epubPath path] lastPathComponent] stringByDeletingPathExtension];
-    VTLog(@"文件名称:%@", fileName);
-    NSError *error;
-    NSString *dst = [[NSString documentsPath] stringByAppendingPathComponent:fileName];
-    [SSZipArchive unzipFileAtPath:[epubPath path] toDestination:dst overwrite:YES password:nil error:&error];
+    // 交给epub的控制器去处理
+    VTDataReader *dataReader = [[VTEpubManager sharedInstance] praserEpub:[epubPath path]];
+    
+    VTReadViewController *readVC = [[VTReadViewController alloc] init];
+    readVC.dataReader = dataReader;
+    [viewController presentViewController:readVC animated:YES completion:^{
+        
+    }];
     return YES;
 }
 
