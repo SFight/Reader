@@ -85,6 +85,14 @@
 		09E2DB26207F6C97000A03C2 /* VTReadDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E2DB24207F6C97000A03C2 /* VTReadDataView.m */; };
 		09E2DB70208078E9000A03C2 /* VTReaderConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 09E2DB6E208078E9000A03C2 /* VTReaderConfig.h */; };
 		09E2DB71208078E9000A03C2 /* VTReaderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E2DB6F208078E9000A03C2 /* VTReaderConfig.m */; };
+		528B998620EF0417009FF38A /* VTReadMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = 528B998420EF0417009FF38A /* VTReadMenuView.h */; };
+		528B998720EF0417009FF38A /* VTReadMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 528B998520EF0417009FF38A /* VTReadMenuView.m */; };
+		528B998A20EF0432009FF38A /* VTReadTopMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = 528B998820EF0432009FF38A /* VTReadTopMenuView.h */; };
+		528B998B20EF0432009FF38A /* VTReadTopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 528B998920EF0432009FF38A /* VTReadTopMenuView.m */; };
+		528B998E20EF07D2009FF38A /* VTBottomMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = 528B998C20EF07D2009FF38A /* VTBottomMenuView.h */; };
+		528B998F20EF07D2009FF38A /* VTBottomMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 528B998D20EF07D2009FF38A /* VTBottomMenuView.m */; };
+		528B999320EF08EF009FF38A /* VTWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 528B999120EF08EF009FF38A /* VTWindow.h */; };
+		528B999420EF08EF009FF38A /* VTWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 528B999220EF08EF009FF38A /* VTWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -236,6 +244,14 @@
 		09E2DB6E208078E9000A03C2 /* VTReaderConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTReaderConfig.h; sourceTree = "<group>"; };
 		09E2DB6F208078E9000A03C2 /* VTReaderConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTReaderConfig.m; sourceTree = "<group>"; };
 		5237A4C920EE12A60046C61D /* DTCoreText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DTCoreText.xcodeproj; path = Externals/DTCoreText/DTCoreText.xcodeproj; sourceTree = SOURCE_ROOT; };
+		528B998420EF0417009FF38A /* VTReadMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTReadMenuView.h; sourceTree = "<group>"; };
+		528B998520EF0417009FF38A /* VTReadMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTReadMenuView.m; sourceTree = "<group>"; };
+		528B998820EF0432009FF38A /* VTReadTopMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTReadTopMenuView.h; sourceTree = "<group>"; };
+		528B998920EF0432009FF38A /* VTReadTopMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTReadTopMenuView.m; sourceTree = "<group>"; };
+		528B998C20EF07D2009FF38A /* VTBottomMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTBottomMenuView.h; sourceTree = "<group>"; };
+		528B998D20EF07D2009FF38A /* VTBottomMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTBottomMenuView.m; sourceTree = "<group>"; };
+		528B999120EF08EF009FF38A /* VTWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTWindow.h; sourceTree = "<group>"; };
+		528B999220EF08EF009FF38A /* VTWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -456,6 +472,8 @@
 		09C6389F207C5B60007E6E35 /* Reader */ = {
 			isa = PBXGroup;
 			children = (
+				528B999020EF08E2009FF38A /* Window */,
+				528B997B20EF03F1009FF38A /* Menu */,
 				09C638A0207C5B6D007E6E35 /* VTPageViewController.h */,
 				09C638A4207C5B6E007E6E35 /* VTPageViewController.m */,
 				09C638A5207C5B6E007E6E35 /* VTReadDataViewController.h */,
@@ -521,6 +539,28 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		528B997B20EF03F1009FF38A /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				528B998420EF0417009FF38A /* VTReadMenuView.h */,
+				528B998520EF0417009FF38A /* VTReadMenuView.m */,
+				528B998820EF0432009FF38A /* VTReadTopMenuView.h */,
+				528B998920EF0432009FF38A /* VTReadTopMenuView.m */,
+				528B998C20EF07D2009FF38A /* VTBottomMenuView.h */,
+				528B998D20EF07D2009FF38A /* VTBottomMenuView.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		528B999020EF08E2009FF38A /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				528B999120EF08EF009FF38A /* VTWindow.h */,
+				528B999220EF08EF009FF38A /* VTWindow.m */,
+			);
+			name = Window;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -532,7 +572,9 @@
 				09C638DA207C62E2007E6E35 /* VTDataBase.h in Headers */,
 				09C638B8207C5D89007E6E35 /* VTConstants.h in Headers */,
 				09C63876207C5B0A007E6E35 /* hmac.h in Headers */,
+				528B998A20EF0432009FF38A /* VTReadTopMenuView.h in Headers */,
 				09C63870207C5B0A007E6E35 /* brg_types.h in Headers */,
+				528B999320EF08EF009FF38A /* VTWindow.h in Headers */,
 				09C6386C207C5B0A007E6E35 /* aesopt.h in Headers */,
 				09C638C4207C5FE8007E6E35 /* VTTXTManager.h in Headers */,
 				09C63868207C5B0A007E6E35 /* aes.h in Headers */,
@@ -542,6 +584,7 @@
 				09C63881207C5B0A007E6E35 /* mztools.h in Headers */,
 				09C6386E207C5B0A007E6E35 /* aestab.h in Headers */,
 				09C638A9207C5B6E007E6E35 /* VTReadModelController.h in Headers */,
+				528B998E20EF07D2009FF38A /* VTBottomMenuView.h in Headers */,
 				09C6389D207C5B5B007E6E35 /* VTBaseViewController.h in Headers */,
 				09C638A8207C5B6E007E6E35 /* VTPageViewController.h in Headers */,
 				09C63888207C5B0A007E6E35 /* SSZipCommon.h in Headers */,
@@ -560,6 +603,7 @@
 				09C638CD207C6015007E6E35 /* VTPDFManager.h in Headers */,
 				09C63872207C5B0A007E6E35 /* entropy.h in Headers */,
 				09C63899207C5B5B007E6E35 /* VTBaseNavigationController.h in Headers */,
+				528B998620EF0417009FF38A /* VTReadMenuView.h in Headers */,
 				09C637FC207C57DA007E6E35 /* VTReader.h in Headers */,
 				09C63869207C5B0A007E6E35 /* aes_via_ace.h in Headers */,
 				09E2DB70208078E9000A03C2 /* VTReaderConfig.h in Headers */,
@@ -715,6 +759,7 @@
 				09C6386A207C5B0A007E6E35 /* aescrypt.c in Sources */,
 				09C6387B207C5B0A007E6E35 /* sha1.c in Sources */,
 				09C63891207C5B34007E6E35 /* NSString+VTPhoneInfo.m in Sources */,
+				528B998F20EF07D2009FF38A /* VTBottomMenuView.m in Sources */,
 				09C6387E207C5B0A007E6E35 /* ioapi.c in Sources */,
 				09E2DB71208078E9000A03C2 /* VTReaderConfig.m in Sources */,
 				09C63880207C5B0A007E6E35 /* mztools.c in Sources */,
@@ -727,11 +772,13 @@
 				09C6386D207C5B0A007E6E35 /* aestab.c in Sources */,
 				09C638CE207C6015007E6E35 /* VTPDFManager.m in Sources */,
 				090D803C207CBA3500B0E433 /* VTXmlParser.m in Sources */,
+				528B998B20EF0432009FF38A /* VTReadTopMenuView.m in Sources */,
 				09C638B3207C5BB3007E6E35 /* VTReaderManager.m in Sources */,
 				09C6388F207C5B34007E6E35 /* NSString+VTSandBox.m in Sources */,
 				09C6386B207C5B0A007E6E35 /* aeskey.c in Sources */,
 				09C63873207C5B0A007E6E35 /* fileenc.c in Sources */,
 				09C638AF207C5B6E007E6E35 /* VTReadDataViewController.m in Sources */,
+				528B998720EF0417009FF38A /* VTReadMenuView.m in Sources */,
 				09C6389E207C5B5B007E6E35 /* VTBaseViewController.m in Sources */,
 				09C63884207C5B0A007E6E35 /* zip.c in Sources */,
 				09C638C0207C5FC5007E6E35 /* VTEpubManager.m in Sources */,
@@ -742,6 +789,7 @@
 				09C638AE207C5B6E007E6E35 /* VTReadModelController.m in Sources */,
 				09C63887207C5B0A007E6E35 /* SSZipArchive.m in Sources */,
 				09C63871207C5B0A007E6E35 /* entropy.c in Sources */,
+				528B999420EF08EF009FF38A /* VTWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
