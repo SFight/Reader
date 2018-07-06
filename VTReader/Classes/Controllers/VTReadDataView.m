@@ -13,6 +13,8 @@
 
 #import "VTReaderConfig.h"
 
+extern NSString *const kNotificationCloseReader;
+
 @interface VTReadDataView()<DTAttributedTextContentViewDelegate, DTLazyImageViewDelegate>
 
 @property (nonatomic, strong) DTAttributedTextContentView *contentView;
@@ -49,6 +51,24 @@
     }
     
     return self;
+}
+
+#pragma mark - Override 点击区域监听
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
+{
+    VTLog(@"点击区域：(%.2f, %.2f)，事件：%@", point.x, point.y, event);
+    
+    
+    
+    // 判断是否点击到中间区域
+    CGRect centerRect = CGRectMake(self.center.x - 20, 0, 40, CGRectGetHeight(self.frame));
+    if (CGRectContainsPoint(centerRect, point)) {
+        // 点击到中间区域, 展示上下菜单栏
+        [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationCloseReader object:nil];
+        return nil;
+    }
+    
+    return [super hitTest:point withEvent:event];
 }
 
 // Only override drawRect: if you perform custom drawing.
