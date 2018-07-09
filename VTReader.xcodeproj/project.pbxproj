@@ -241,7 +241,6 @@
 		09C638D9207C62E2007E6E35 /* VTDataBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTDataBase.m; sourceTree = "<group>"; };
 		09E2DB23207F6C97000A03C2 /* VTReadDataView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTReadDataView.h; sourceTree = "<group>"; };
 		09E2DB24207F6C97000A03C2 /* VTReadDataView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTReadDataView.m; sourceTree = "<group>"; };
-		09E2DB6D207F795F000A03C2 /* DTFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DTFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09E2DB6E208078E9000A03C2 /* VTReaderConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTReaderConfig.h; sourceTree = "<group>"; };
 		09E2DB6F208078E9000A03C2 /* VTReaderConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTReaderConfig.m; sourceTree = "<group>"; };
 		5237A4C920EE12A60046C61D /* DTCoreText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DTCoreText.xcodeproj; path = Externals/DTCoreText/DTCoreText.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -280,7 +279,6 @@
 		090D803D207CC8B200B0E433 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				09E2DB6D207F795F000A03C2 /* DTFoundation.framework */,
 				090D803E207CC8B300B0E433 /* libxml2.tbd */,
 			);
 			name = Frameworks;
