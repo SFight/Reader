@@ -114,7 +114,7 @@ static VTReaderManager *_manager = nil;
     animation.duration = 0.3f;
     [self.window.layer addAnimation:animation forKey:kAnimationOpenReader];
     
-    self.window.windowLevel = UIWindowLevelAlert;
+    self.window.windowLevel = UIWindowLevelNormal;
     [self.window becomeKeyWindow];
     [self.window becomeFirstResponder];
     self.window.alpha = 1.0f;
