@@ -12,6 +12,13 @@
 
 #import "VTReaderConfig.h"
 
+#import "VTReadTopMenuView.h"
+#import "VTReadBottomMenuView.h"
+
+#import "NSString+VTPhoneInfo.h"
+
+NSString *const kNotificationShowOrHideMenu = @"kNotificationShowOrHideMenu"; // 展示或隐藏上下菜单的通知
+
 @interface VTReadViewController ()
 
 /** 翻页控制器容器 */
@@ -19,6 +26,11 @@
 
 /** 翻页控制器的数据源代理 */
 @property (nonatomic, strong) VTReadModelController *modelController;
+
+/** 顶部菜单 */
+@property (nonatomic, strong) VTReadTopMenuView *topMenuView;
+/** 底部菜单 */
+@property (nonatomic, strong) VTReadBottomMenuView *bottomMenuView;
 
 @end
 
@@ -60,11 +72,51 @@
     [self addChildViewController:self.pageVC];
     
     [self.pageVC didMoveToParentViewController:self];
+    
+    [self addMenuView];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onNotificationShowMenu:) name:kNotificationShowOrHideMenu object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+#pragma mark - 添加菜单视图
+- (void)addMenuView
+{
+    CGFloat originX = 0;
+    CGFloat originY = 0;
+    CGFloat width = CGRectGetWidth(self.view.frame);
+    CGFloat height = [NSString isIphoneX] ? 88 : 64; // iPhoneX StatusBar高44px，NavigationBar高44px，底部TabBar高83px
+                                                                        // 普通 StatusBar高20px，NavigationBar高44px，底部TabBar高49px
+    _topMenuView = [[VTReadTopMenuView alloc] initWithFrame:CGRectMake(originX, originY, width, height)];
+    self.topMenuView.backgroundColor = [UIColor redColor];
+    self.topMenuView.hidden = YES;
+    
+    height = [NSString isIphoneX] ? 83 : 49;
+    originY = CGRectGetHeight(self.view.frame) - height;
+    _bottomMenuView = [[VTReadBottomMenuView alloc] initWithFrame:CGRectMake(originX, originY, width, height)];
+    self.bottomMenuView.backgroundColor = [UIColor purpleColor];
+    self.bottomMenuView.hidden = YES;
+    
+    [self.contentView addSubview:self.topMenuView];
+    [self.contentView addSubview:self.bottomMenuView];
+}
+
+#pragma mark - NSNotification 通知展示菜单
+- (void)onNotificationShowMenu:(NSNotification *)notification
+{
+    [UIView animateWithDuration:0.5f animations:^{
+        self.topMenuView.hidden = !self.topMenuView.hidden;
+        self.bottomMenuView.hidden = !self.bottomMenuView.hidden;
+    }];
 }
 
 @end
