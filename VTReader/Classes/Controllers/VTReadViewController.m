@@ -27,10 +27,17 @@ NSString *const kNotificationShowOrHideMenu = @"kNotificationShowOrHideMenu"; //
 /** 翻页控制器的数据源代理 */
 @property (nonatomic, strong) VTReadModelController *modelController;
 
+/** 顶部菜单背景 */
+@property (nonatomic, strong) UIView *topMenuBgView;
 /** 顶部菜单 */
 @property (nonatomic, strong) VTReadTopMenuView *topMenuView;
+/** 底部菜单背景 */
+@property (nonatomic, strong) UIView *bottomMenuBgView;
 /** 底部菜单 */
 @property (nonatomic, strong) VTReadBottomMenuView *bottomMenuView;
+
+/** statusBar的显示和隐藏 */
+@property (nonatomic) BOOL hiddenStatusBar;
 
 @end
 
@@ -57,6 +64,9 @@ NSString *const kNotificationShowOrHideMenu = @"kNotificationShowOrHideMenu"; //
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    _hiddenStatusBar = YES;
+    [self setNeedsStatusBarAppearanceUpdate];
     
     _pageVC = [[VTPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     self.pageVC.dataSource = self.modelController;
@@ -96,27 +106,53 @@ NSString *const kNotificationShowOrHideMenu = @"kNotificationShowOrHideMenu"; //
     CGFloat width = CGRectGetWidth(self.view.frame);
     CGFloat height = [NSString isIphoneX] ? 88 : 64; // iPhoneX StatusBar高44px，NavigationBar高44px，底部TabBar高83px
                                                                         // 普通 StatusBar高20px，NavigationBar高44px，底部TabBar高49px
+    
+    _topMenuBgView = [[UIView alloc] initWithFrame:CGRectMake(originX, originY, width, height)];
+    self.topMenuBgView.backgroundColor = [UIColor colorForReaderMenu];
+    self.topMenuBgView.hidden = YES;
+    
+    originY = [NSString isIphoneX] ? 44 : 20;
+    height = CGRectGetHeight(self.topMenuBgView.frame) - originY;
     _topMenuView = [[VTReadTopMenuView alloc] initWithFrame:CGRectMake(originX, originY, width, height)];
-    self.topMenuView.backgroundColor = [UIColor redColor];
-    self.topMenuView.hidden = YES;
+    [self.topMenuBgView addSubview:self.topMenuView];
     
-    height = [NSString isIphoneX] ? 83 : 49;
+    height = [NSString isIphoneX] ? 220 + 34 : 220;
     originY = CGRectGetHeight(self.view.frame) - height;
-    _bottomMenuView = [[VTReadBottomMenuView alloc] initWithFrame:CGRectMake(originX, originY, width, height)];
-    self.bottomMenuView.backgroundColor = [UIColor purpleColor];
-    self.bottomMenuView.hidden = YES;
     
-    [self.contentView addSubview:self.topMenuView];
-    [self.contentView addSubview:self.bottomMenuView];
+    _bottomMenuBgView = [[UIView alloc] initWithFrame:CGRectMake(originX, originY, width, height)];
+    self.bottomMenuBgView.backgroundColor = [UIColor colorForReaderMenu];
+    self.bottomMenuBgView.hidden = YES;
+    
+    originY = 0;
+    height = [NSString isIphoneX] ? CGRectGetHeight(self.bottomMenuBgView.frame) - 34 : CGRectGetHeight(self.bottomMenuBgView.frame);
+    _bottomMenuView = [[VTReadBottomMenuView alloc] initWithFrame:CGRectMake(originX, originY, width, height)];
+    [self.bottomMenuBgView addSubview:self.bottomMenuView];
+    
+    [self.contentView addSubview:self.topMenuBgView];
+    [self.contentView addSubview:self.bottomMenuBgView];
+}
+
+#pragma mark - Override
+- (BOOL)prefersStatusBarHidden
+{
+    return self.hiddenStatusBar;
 }
 
 #pragma mark - NSNotification 通知展示菜单
 - (void)onNotificationShowMenu:(NSNotification *)notification
 {
-    [UIView animateWithDuration:0.5f animations:^{
-        self.topMenuView.hidden = !self.topMenuView.hidden;
-        self.bottomMenuView.hidden = !self.bottomMenuView.hidden;
-    }];
+    CATransition *animation = [CATransition animation];
+    animation.type = kCATransitionFade;
+    animation.duration = 0.5;
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    [self.topMenuBgView.layer addAnimation:animation forKey:nil] ;
+    [self.bottomMenuBgView.layer addAnimation:animation forKey:nil];
+    
+    self.topMenuBgView.hidden = !self.topMenuBgView.hidden;
+    self.hiddenStatusBar = self.topMenuBgView.hidden;
+    [self setNeedsStatusBarAppearanceUpdate];
+    self.bottomMenuBgView.hidden = !self.bottomMenuBgView.hidden;
+    
 }
 
 @end
