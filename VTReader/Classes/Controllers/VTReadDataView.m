@@ -14,8 +14,9 @@
 #import "VTReaderConfig.h"
 
 extern NSString *const kNotificationCloseReader;
+extern NSString *const kNotificationShowOrHideMenu;
 
-@interface VTReadDataView()<DTAttributedTextContentViewDelegate, DTLazyImageViewDelegate>
+@interface VTReadDataView()<DTAttributedTextContentViewDelegate, DTLazyImageViewDelegate, UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong) DTAttributedTextContentView *contentView;
 
@@ -48,28 +49,68 @@ extern NSString *const kNotificationCloseReader;
             self.contentView.attributedString = self.page;
         }
         [self addSubview:self.contentView];
+        
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
+        tap.delegate = self;
+        [self addGestureRecognizer:tap];
     }
     
     return self;
 }
 
-#pragma mark - Override 点击区域监听
-- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
+- (void)dealloc
 {
-    VTLog(@"点击区域：(%.2f, %.2f)，事件：%@", point.x, point.y, event);
+    VTLog(@"阅读源数据视图要消失了");
     
-    
-    
+}
+
+#pragma mark - SEL
+- (void)handleTapGesture:(UITapGestureRecognizer *)recognizer
+{
+    CGPoint point = [recognizer locationInView:self];
     // 判断是否点击到中间区域
     CGRect centerRect = CGRectMake(self.center.x - 20, 0, 40, CGRectGetHeight(self.frame));
     if (CGRectContainsPoint(centerRect, point)) {
         // 点击到中间区域, 展示上下菜单栏
-        [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationCloseReader object:nil];
-        return nil;
+        //        [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationCloseReader object:nil];
+        [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationShowOrHideMenu object:nil];
+    }
+
+}
+
+#pragma mark - UIGestureRecognizerDelegate
+//- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
+{
+    CGPoint point = [touch locationInView:self];
+    // 判断是否点击到中间区域
+    CGRect centerRect = CGRectMake(self.center.x - 20, 0, 40, CGRectGetHeight(self.frame));
+    if (CGRectContainsPoint(centerRect, point)) {
+        // 点击到中间区域, 展示上下菜单栏
+        //        [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationCloseReader object:nil];
+//        [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationShowOrHideMenu object:nil];
+        return YES;
     }
     
-    return [super hitTest:point withEvent:event];
+    return NO;
 }
+
+#pragma mark - Override 点击区域监听
+//- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
+//{
+//    VTLog(@"点击区域：(%.2f, %.2f)，事件：%@", point.x, point.y, event);
+//
+//    // 判断是否点击到中间区域
+//    CGRect centerRect = CGRectMake(self.center.x - 20, 0, 40, CGRectGetHeight(self.frame));
+//    if (CGRectContainsPoint(centerRect, point)) {
+//        // 点击到中间区域, 展示上下菜单栏
+////        [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationCloseReader object:nil];
+//        [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationShowOrHideMenu object:nil];
+////        return self;
+//    }
+//
+//    return nil;
+//}
 
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
