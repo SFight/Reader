@@ -94,6 +94,11 @@
 		528B999720EF6322009FF38A /* VTReadBottomMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = 528B999520EF6322009FF38A /* VTReadBottomMenuView.h */; };
 		528B999820EF6322009FF38A /* VTReadBottomMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 528B999620EF6322009FF38A /* VTReadBottomMenuView.m */; };
 		52F8740C20F2F94100AE8604 /* DTCoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5237A4E320EE12A70046C61D /* DTCoreText.framework */; };
+		52F8745620F32F8C00AE8604 /* UIColor+VT.h in Headers */ = {isa = PBXBuildFile; fileRef = 52F8745420F32F8C00AE8604 /* UIColor+VT.h */; };
+		52F8745720F32F8C00AE8604 /* UIColor+VT.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F8745520F32F8C00AE8604 /* UIColor+VT.m */; };
+		52F8745A20F32FBA00AE8604 /* UIColor+VTReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 52F8745820F32FBA00AE8604 /* UIColor+VTReader.h */; };
+		52F8745B20F32FBA00AE8604 /* UIColor+VTReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F8745920F32FBA00AE8604 /* UIColor+VTReader.m */; };
+		52F8745E20F33B5A00AE8604 /* vt_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52F8745D20F33B5A00AE8604 /* vt_back@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -252,6 +257,11 @@
 		528B999220EF08EF009FF38A /* VTWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTWindow.m; sourceTree = "<group>"; };
 		528B999520EF6322009FF38A /* VTReadBottomMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTReadBottomMenuView.h; sourceTree = "<group>"; };
 		528B999620EF6322009FF38A /* VTReadBottomMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTReadBottomMenuView.m; sourceTree = "<group>"; };
+		52F8745420F32F8C00AE8604 /* UIColor+VT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+VT.h"; sourceTree = "<group>"; };
+		52F8745520F32F8C00AE8604 /* UIColor+VT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+VT.m"; sourceTree = "<group>"; };
+		52F8745820F32FBA00AE8604 /* UIColor+VTReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+VTReader.h"; sourceTree = "<group>"; };
+		52F8745920F32FBA00AE8604 /* UIColor+VTReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+VTReader.m"; sourceTree = "<group>"; };
+		52F8745D20F33B5A00AE8604 /* vt_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vt_back@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,6 +318,7 @@
 				09C6383B207C5A65007E6E35 /* Classes */,
 				09C6383A207C5A5C007E6E35 /* Sources */,
 				09C63839207C5A51007E6E35 /* Thirds */,
+				52F8745C20F338F300AE8604 /* Resources */,
 				09C637FA207C57DA007E6E35 /* VTReader.h */,
 				09C637FB207C57DA007E6E35 /* Info.plist */,
 			);
@@ -395,6 +406,10 @@
 				09C6388D207C5B34007E6E35 /* NSString+VTPhoneInfo.m */,
 				09C6388C207C5B34007E6E35 /* NSString+VTSandBox.h */,
 				09C6388B207C5B34007E6E35 /* NSString+VTSandBox.m */,
+				52F8745420F32F8C00AE8604 /* UIColor+VT.h */,
+				52F8745520F32F8C00AE8604 /* UIColor+VT.m */,
+				52F8745820F32FBA00AE8604 /* UIColor+VTReader.h */,
+				52F8745920F32FBA00AE8604 /* UIColor+VTReader.m */,
 			);
 			path = Catagory;
 			sourceTree = "<group>";
@@ -561,6 +576,14 @@
 			name = Window;
 			sourceTree = "<group>";
 		};
+		52F8745C20F338F300AE8604 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				52F8745D20F33B5A00AE8604 /* vt_back@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -572,6 +595,7 @@
 				09C638DA207C62E2007E6E35 /* VTDataBase.h in Headers */,
 				09C638B8207C5D89007E6E35 /* VTConstants.h in Headers */,
 				09C63876207C5B0A007E6E35 /* hmac.h in Headers */,
+				52F8745620F32F8C00AE8604 /* UIColor+VT.h in Headers */,
 				528B998A20EF0432009FF38A /* VTReadTopMenuView.h in Headers */,
 				09C63870207C5B0A007E6E35 /* brg_types.h in Headers */,
 				528B999320EF08EF009FF38A /* VTWindow.h in Headers */,
@@ -612,6 +636,7 @@
 				09C6386F207C5B0A007E6E35 /* brg_endian.h in Headers */,
 				09C638D1207C62B8007E6E35 /* VTDataReader.h in Headers */,
 				09C638AB207C5B6E007E6E35 /* VTReadViewController.h in Headers */,
+				52F8745A20F32FBA00AE8604 /* UIColor+VTReader.h in Headers */,
 				09C63890207C5B34007E6E35 /* NSString+VTSandBox.h in Headers */,
 				09C6387F207C5B0A007E6E35 /* ioapi.h in Headers */,
 				09C638B2207C5BB3007E6E35 /* VTReaderManager.h in Headers */,
@@ -742,6 +767,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52F8745E20F33B5A00AE8604 /* vt_back@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -770,6 +796,7 @@
 				09C6389C207C5B5B007E6E35 /* VTBaseView.m in Sources */,
 				09C638D6207C62C9007E6E35 /* VTDataReaderChapter.m in Sources */,
 				09C6386D207C5B0A007E6E35 /* aestab.c in Sources */,
+				52F8745B20F32FBA00AE8604 /* UIColor+VTReader.m in Sources */,
 				09C638CE207C6015007E6E35 /* VTPDFManager.m in Sources */,
 				090D803C207CBA3500B0E433 /* VTXmlParser.m in Sources */,
 				528B998B20EF0432009FF38A /* VTReadTopMenuView.m in Sources */,
@@ -778,6 +805,7 @@
 				09C6386B207C5B0A007E6E35 /* aeskey.c in Sources */,
 				09C63873207C5B0A007E6E35 /* fileenc.c in Sources */,
 				09C638AF207C5B6E007E6E35 /* VTReadDataViewController.m in Sources */,
+				52F8745720F32F8C00AE8604 /* UIColor+VT.m in Sources */,
 				528B998720EF0417009FF38A /* VTReadMenuView.m in Sources */,
 				09C6389E207C5B5B007E6E35 /* VTBaseViewController.m in Sources */,
 				09C63884207C5B0A007E6E35 /* zip.c in Sources */,

@@ -18,6 +18,8 @@
     #import "VTConstants.h"
     #import "NSString+VTSandBox.h"
     #import "NSString+VTPhoneInfo.h"
+    #import "UIColor+VT.h"
+    #import "UIColor+VTReader.h"
 #endif
 
 
