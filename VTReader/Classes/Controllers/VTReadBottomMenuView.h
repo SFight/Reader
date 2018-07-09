@@ -1,5 +1,5 @@
 //
-//  VTBottomMenuView.h
+//  VTReadBottomMenuView.h
 //  VTReader
 //
 //  Created by vtears on 2018/7/6.
@@ -8,6 +8,6 @@
 
 #import "VTReadMenuView.h"
 
-@interface VTBottomMenuView : VTReadMenuView
+@interface VTReadBottomMenuView : VTReadMenuView
 
 @end

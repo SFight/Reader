@@ -1,14 +1,14 @@
 //
-//  VTBottomMenuView.m
+//  VTReadBottomMenuView.m
 //  VTReader
 //
 //  Created by vtears on 2018/7/6.
 //  Copyright © 2018年 JinJie Song. All rights reserved.
 //
 
-#import "VTBottomMenuView.h"
+#import "VTReadBottomMenuView.h"
 
-@implementation VTBottomMenuView
+@implementation VTReadBottomMenuView
 
 /*
 // Only override drawRect: if you perform custom drawing.
