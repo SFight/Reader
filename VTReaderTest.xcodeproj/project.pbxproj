@@ -18,6 +18,10 @@
 		09C638BB207C5E38007E6E35 /* 三言二拍（插图版）.epub in Resources */ = {isa = PBXBuildFile; fileRef = 09C638BA207C5E38007E6E35 /* 三言二拍（插图版）.epub */; };
 		5238F22C20E2392800C9EB66 /* 1037191.epub in Resources */ = {isa = PBXBuildFile; fileRef = 5238F22B20E2392800C9EB66 /* 1037191.epub */; };
 		52958DD920CA14DC00C64900 /* 3187326.epub in Resources */ = {isa = PBXBuildFile; fileRef = 52958DD820CA14DC00C64900 /* 3187326.epub */; };
+		52F8744F20F3109900AE8604 /* DTFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F8744E20F3109900AE8604 /* DTFoundation.framework */; };
+		52F8745020F3109900AE8604 /* DTFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52F8744E20F3109900AE8604 /* DTFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		52F8745220F3109900AE8604 /* DTCoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F8745120F3109900AE8604 /* DTCoreText.framework */; };
+		52F8745320F3109900AE8604 /* DTCoreText.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52F8745120F3109900AE8604 /* DTCoreText.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				09C63835207C58E1007E6E35 /* VTReader.framework in Embed Frameworks */,
+				52F8745020F3109900AE8604 /* DTFoundation.framework in Embed Frameworks */,
+				52F8745320F3109900AE8604 /* DTCoreText.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +72,8 @@
 		09C638BA207C5E38007E6E35 /* 三言二拍（插图版）.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "三言二拍（插图版）.epub"; sourceTree = "<group>"; };
 		5238F22B20E2392800C9EB66 /* 1037191.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1037191.epub; sourceTree = "<group>"; };
 		52958DD820CA14DC00C64900 /* 3187326.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3187326.epub; sourceTree = "<group>"; };
+		52F8744E20F3109900AE8604 /* DTFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DTFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52F8745120F3109900AE8604 /* DTCoreText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DTCoreText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				09C63834207C58E1007E6E35 /* VTReader.framework in Frameworks */,
+				52F8744F20F3109900AE8604 /* DTFoundation.framework in Frameworks */,
+				52F8745220F3109900AE8604 /* DTCoreText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +93,8 @@
 		09C6380C207C5856007E6E35 = {
 			isa = PBXGroup;
 			children = (
+				52F8745120F3109900AE8604 /* DTCoreText.framework */,
+				52F8744E20F3109900AE8604 /* DTFoundation.framework */,
 				09C63817207C5856007E6E35 /* VTReaderTest */,
 				09C63816207C5856007E6E35 /* Products */,
 			);
