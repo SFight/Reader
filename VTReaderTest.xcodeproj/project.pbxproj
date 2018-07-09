@@ -376,6 +376,7 @@
 				DEVELOPMENT_TEAM = V99JGDJF65;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = VTReaderTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vtears.ReaderTest.VTReaderTest;
@@ -392,6 +393,7 @@
 				DEVELOPMENT_TEAM = V99JGDJF65;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = VTReaderTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vtears.ReaderTest.VTReaderTest;
