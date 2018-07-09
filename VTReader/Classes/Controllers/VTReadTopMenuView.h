@@ -6,8 +6,8 @@
 //  Copyright © 2018年 JinJie Song. All rights reserved.
 //
 
-#import "VTReadMenuView.h"
+#import <UIKit/UIKit.h>
 
-@interface VTReadTopMenuView : VTReadMenuView
+@interface VTReadTopMenuView : UIView
 
 @end
