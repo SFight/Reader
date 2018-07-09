@@ -89,10 +89,11 @@
 		528B998720EF0417009FF38A /* VTReadMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 528B998520EF0417009FF38A /* VTReadMenuView.m */; };
 		528B998A20EF0432009FF38A /* VTReadTopMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = 528B998820EF0432009FF38A /* VTReadTopMenuView.h */; };
 		528B998B20EF0432009FF38A /* VTReadTopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 528B998920EF0432009FF38A /* VTReadTopMenuView.m */; };
-		528B998E20EF07D2009FF38A /* VTBottomMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = 528B998C20EF07D2009FF38A /* VTBottomMenuView.h */; };
-		528B998F20EF07D2009FF38A /* VTBottomMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 528B998D20EF07D2009FF38A /* VTBottomMenuView.m */; };
 		528B999320EF08EF009FF38A /* VTWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 528B999120EF08EF009FF38A /* VTWindow.h */; };
 		528B999420EF08EF009FF38A /* VTWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 528B999220EF08EF009FF38A /* VTWindow.m */; };
+		528B999720EF6322009FF38A /* VTReadBottomMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = 528B999520EF6322009FF38A /* VTReadBottomMenuView.h */; };
+		528B999820EF6322009FF38A /* VTReadBottomMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 528B999620EF6322009FF38A /* VTReadBottomMenuView.m */; };
+		52F8740C20F2F94100AE8604 /* DTCoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5237A4E320EE12A70046C61D /* DTCoreText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -248,10 +249,10 @@
 		528B998520EF0417009FF38A /* VTReadMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTReadMenuView.m; sourceTree = "<group>"; };
 		528B998820EF0432009FF38A /* VTReadTopMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTReadTopMenuView.h; sourceTree = "<group>"; };
 		528B998920EF0432009FF38A /* VTReadTopMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTReadTopMenuView.m; sourceTree = "<group>"; };
-		528B998C20EF07D2009FF38A /* VTBottomMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTBottomMenuView.h; sourceTree = "<group>"; };
-		528B998D20EF07D2009FF38A /* VTBottomMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTBottomMenuView.m; sourceTree = "<group>"; };
 		528B999120EF08EF009FF38A /* VTWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTWindow.h; sourceTree = "<group>"; };
 		528B999220EF08EF009FF38A /* VTWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTWindow.m; sourceTree = "<group>"; };
+		528B999520EF6322009FF38A /* VTReadBottomMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTReadBottomMenuView.h; sourceTree = "<group>"; };
+		528B999620EF6322009FF38A /* VTReadBottomMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTReadBottomMenuView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +260,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52F8740C20F2F94100AE8604 /* DTCoreText.framework in Frameworks */,
 				090D803F207CC8B300B0E433 /* libxml2.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,8 +548,8 @@
 				528B998520EF0417009FF38A /* VTReadMenuView.m */,
 				528B998820EF0432009FF38A /* VTReadTopMenuView.h */,
 				528B998920EF0432009FF38A /* VTReadTopMenuView.m */,
-				528B998C20EF07D2009FF38A /* VTBottomMenuView.h */,
-				528B998D20EF07D2009FF38A /* VTBottomMenuView.m */,
+				528B999520EF6322009FF38A /* VTReadBottomMenuView.h */,
+				528B999620EF6322009FF38A /* VTReadBottomMenuView.m */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -584,7 +586,6 @@
 				09C63881207C5B0A007E6E35 /* mztools.h in Headers */,
 				09C6386E207C5B0A007E6E35 /* aestab.h in Headers */,
 				09C638A9207C5B6E007E6E35 /* VTReadModelController.h in Headers */,
-				528B998E20EF07D2009FF38A /* VTBottomMenuView.h in Headers */,
 				09C6389D207C5B5B007E6E35 /* VTBaseViewController.h in Headers */,
 				09C638A8207C5B6E007E6E35 /* VTPageViewController.h in Headers */,
 				09C63888207C5B0A007E6E35 /* SSZipCommon.h in Headers */,
@@ -606,6 +607,7 @@
 				528B998620EF0417009FF38A /* VTReadMenuView.h in Headers */,
 				09C637FC207C57DA007E6E35 /* VTReader.h in Headers */,
 				09C63869207C5B0A007E6E35 /* aes_via_ace.h in Headers */,
+				528B999720EF6322009FF38A /* VTReadBottomMenuView.h in Headers */,
 				09E2DB70208078E9000A03C2 /* VTReaderConfig.h in Headers */,
 				09C6387A207C5B0A007E6E35 /* pwd2key.h in Headers */,
 				09C63883207C5B0A007E6E35 /* unzip.h in Headers */,
@@ -759,10 +761,10 @@
 				09C6386A207C5B0A007E6E35 /* aescrypt.c in Sources */,
 				09C6387B207C5B0A007E6E35 /* sha1.c in Sources */,
 				09C63891207C5B34007E6E35 /* NSString+VTPhoneInfo.m in Sources */,
-				528B998F20EF07D2009FF38A /* VTBottomMenuView.m in Sources */,
 				09C6387E207C5B0A007E6E35 /* ioapi.c in Sources */,
 				09E2DB71208078E9000A03C2 /* VTReaderConfig.m in Sources */,
 				09C63880207C5B0A007E6E35 /* mztools.c in Sources */,
+				528B999820EF6322009FF38A /* VTReadBottomMenuView.m in Sources */,
 				09C63882207C5B0A007E6E35 /* unzip.c in Sources */,
 				09C638D2207C62B8007E6E35 /* VTDataReader.m in Sources */,
 				09C6389A207C5B5B007E6E35 /* VTBaseNavigationController.m in Sources */,
@@ -917,10 +919,11 @@
 		09C63800207C57DA007E6E35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = NO;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -946,6 +949,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = NO;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
