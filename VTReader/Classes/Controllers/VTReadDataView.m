@@ -69,7 +69,7 @@ extern NSString *const kNotificationShowOrHideMenu;
 {
     CGPoint point = [recognizer locationInView:self];
     // 判断是否点击到中间区域
-    CGRect centerRect = CGRectMake(self.center.x - 20, 0, 40, CGRectGetHeight(self.frame));
+    CGRect centerRect = CGRectMake(self.center.x - CenterWidth_Default/2.0, 0, CenterWidth_Default, CGRectGetHeight(self.frame));
     if (CGRectContainsPoint(centerRect, point)) {
         // 点击到中间区域, 展示上下菜单栏
         //        [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationCloseReader object:nil];
@@ -84,7 +84,7 @@ extern NSString *const kNotificationShowOrHideMenu;
 {
     CGPoint point = [touch locationInView:self];
     // 判断是否点击到中间区域
-    CGRect centerRect = CGRectMake(self.center.x - 20, 0, 40, CGRectGetHeight(self.frame));
+    CGRect centerRect = CGRectMake(self.center.x - CenterWidth_Default/2.0, 0, CenterWidth_Default, CGRectGetHeight(self.frame));
     if (CGRectContainsPoint(centerRect, point)) {
         // 点击到中间区域, 展示上下菜单栏
         //        [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationCloseReader object:nil];
