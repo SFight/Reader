@@ -1,3 +1,4 @@
 [submodule "Externals/DTCoreText"]
 	path = Externals/DTCoreText
 	url = https://github.com/SFight/DTCoreText.git
+	ignore = all
