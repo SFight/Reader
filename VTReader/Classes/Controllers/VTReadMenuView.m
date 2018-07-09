@@ -36,9 +36,9 @@ extern NSString *const kNotificationShowOrHideMenu;
         
         [self setupSubviews];
         
-//        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
-////        tap.delegate = self;
-//        [self addGestureRecognizer:tap];
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
+//        tap.delegate = self;
+        [self addGestureRecognizer:tap];
     }
     
     return self;
