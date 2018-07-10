@@ -10,6 +10,10 @@
 
 @interface UIColor (VTReader)
 
+/** hex: #8aaab9 */
 + (UIColor *)colorForReaderMenu;
+
+/** hex: #7e9ead */
++ (UIColor *)colorForLine;
 
 @end

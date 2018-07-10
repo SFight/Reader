@@ -15,4 +15,9 @@
     return [UIColor colorForHex:@"#8aaab9"];
 }
 
++ (UIColor *)colorForLine
+{
+    return [UIColor colorForHex:@"#7e9ead"];
+}
+
 @end
