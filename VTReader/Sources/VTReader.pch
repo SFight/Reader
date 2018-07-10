@@ -20,6 +20,7 @@
     #import "NSString+VTPhoneInfo.h"
     #import "UIColor+VT.h"
     #import "UIColor+VTReader.h"
+    #import "UIFont+VTReader.h"
 #endif
 
 

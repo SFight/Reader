@@ -85,6 +85,14 @@
 		09E2DB26207F6C97000A03C2 /* VTReadDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E2DB24207F6C97000A03C2 /* VTReadDataView.m */; };
 		09E2DB70208078E9000A03C2 /* VTReaderConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 09E2DB6E208078E9000A03C2 /* VTReaderConfig.h */; };
 		09E2DB71208078E9000A03C2 /* VTReaderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E2DB6F208078E9000A03C2 /* VTReaderConfig.m */; };
+		5281689620F4436A0057DD10 /* vt_font@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5281688A20F443690057DD10 /* vt_font@2x.png */; };
+		5281689720F4436A0057DD10 /* vt_catalog@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5281689320F4436A0057DD10 /* vt_catalog@2x.png */; };
+		5281689820F4436A0057DD10 /* vt_brightness@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5281689420F4436A0057DD10 /* vt_brightness@2x.png */; };
+		5281689920F4436A0057DD10 /* vt_setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5281689520F4436A0057DD10 /* vt_setting@2x.png */; };
+		5281689C20F481CC0057DD10 /* VTReadBottomChapterControlView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5281689A20F481CC0057DD10 /* VTReadBottomChapterControlView.h */; };
+		5281689D20F481CC0057DD10 /* VTReadBottomChapterControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5281689B20F481CC0057DD10 /* VTReadBottomChapterControlView.m */; };
+		528168A020F483A50057DD10 /* UIFont+VTReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5281689E20F483A50057DD10 /* UIFont+VTReader.h */; };
+		528168A120F483A50057DD10 /* UIFont+VTReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5281689F20F483A50057DD10 /* UIFont+VTReader.m */; };
 		528B998620EF0417009FF38A /* VTReadMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = 528B998420EF0417009FF38A /* VTReadMenuView.h */; };
 		528B998720EF0417009FF38A /* VTReadMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 528B998520EF0417009FF38A /* VTReadMenuView.m */; };
 		528B998A20EF0432009FF38A /* VTReadTopMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = 528B998820EF0432009FF38A /* VTReadTopMenuView.h */; };
@@ -249,6 +257,14 @@
 		09E2DB6E208078E9000A03C2 /* VTReaderConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTReaderConfig.h; sourceTree = "<group>"; };
 		09E2DB6F208078E9000A03C2 /* VTReaderConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTReaderConfig.m; sourceTree = "<group>"; };
 		5237A4C920EE12A60046C61D /* DTCoreText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DTCoreText.xcodeproj; path = Externals/DTCoreText/DTCoreText.xcodeproj; sourceTree = SOURCE_ROOT; };
+		5281688A20F443690057DD10 /* vt_font@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vt_font@2x.png"; sourceTree = "<group>"; };
+		5281689320F4436A0057DD10 /* vt_catalog@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vt_catalog@2x.png"; sourceTree = "<group>"; };
+		5281689420F4436A0057DD10 /* vt_brightness@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vt_brightness@2x.png"; sourceTree = "<group>"; };
+		5281689520F4436A0057DD10 /* vt_setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vt_setting@2x.png"; sourceTree = "<group>"; };
+		5281689A20F481CC0057DD10 /* VTReadBottomChapterControlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTReadBottomChapterControlView.h; sourceTree = "<group>"; };
+		5281689B20F481CC0057DD10 /* VTReadBottomChapterControlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTReadBottomChapterControlView.m; sourceTree = "<group>"; };
+		5281689E20F483A50057DD10 /* UIFont+VTReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+VTReader.h"; sourceTree = "<group>"; };
+		5281689F20F483A50057DD10 /* UIFont+VTReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+VTReader.m"; sourceTree = "<group>"; };
 		528B998420EF0417009FF38A /* VTReadMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTReadMenuView.h; sourceTree = "<group>"; };
 		528B998520EF0417009FF38A /* VTReadMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTReadMenuView.m; sourceTree = "<group>"; };
 		528B998820EF0432009FF38A /* VTReadTopMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTReadTopMenuView.h; sourceTree = "<group>"; };
@@ -410,6 +426,8 @@
 				52F8745520F32F8C00AE8604 /* UIColor+VT.m */,
 				52F8745820F32FBA00AE8604 /* UIColor+VTReader.h */,
 				52F8745920F32FBA00AE8604 /* UIColor+VTReader.m */,
+				5281689E20F483A50057DD10 /* UIFont+VTReader.h */,
+				5281689F20F483A50057DD10 /* UIFont+VTReader.m */,
 			);
 			path = Catagory;
 			sourceTree = "<group>";
@@ -563,6 +581,8 @@
 				528B998920EF0432009FF38A /* VTReadTopMenuView.m */,
 				528B999520EF6322009FF38A /* VTReadBottomMenuView.h */,
 				528B999620EF6322009FF38A /* VTReadBottomMenuView.m */,
+				5281689A20F481CC0057DD10 /* VTReadBottomChapterControlView.h */,
+				5281689B20F481CC0057DD10 /* VTReadBottomChapterControlView.m */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -579,6 +599,10 @@
 		52F8745C20F338F300AE8604 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5281689420F4436A0057DD10 /* vt_brightness@2x.png */,
+				5281689320F4436A0057DD10 /* vt_catalog@2x.png */,
+				5281688A20F443690057DD10 /* vt_font@2x.png */,
+				5281689520F4436A0057DD10 /* vt_setting@2x.png */,
 				52F8745D20F33B5A00AE8604 /* vt_back@2x.png */,
 			);
 			path = Resources;
@@ -597,6 +621,7 @@
 				09C63876207C5B0A007E6E35 /* hmac.h in Headers */,
 				52F8745620F32F8C00AE8604 /* UIColor+VT.h in Headers */,
 				528B998A20EF0432009FF38A /* VTReadTopMenuView.h in Headers */,
+				5281689C20F481CC0057DD10 /* VTReadBottomChapterControlView.h in Headers */,
 				09C63870207C5B0A007E6E35 /* brg_types.h in Headers */,
 				528B999320EF08EF009FF38A /* VTWindow.h in Headers */,
 				09C6386C207C5B0A007E6E35 /* aesopt.h in Headers */,
@@ -614,6 +639,7 @@
 				09C6389B207C5B5B007E6E35 /* VTBaseView.h in Headers */,
 				09C63842207C5AE5007E6E35 /* VTReader.pch in Headers */,
 				090D803B207CBA3500B0E433 /* VTXmlParser.h in Headers */,
+				528168A020F483A50057DD10 /* UIFont+VTReader.h in Headers */,
 				09C6387C207C5B0A007E6E35 /* sha1.h in Headers */,
 				09C638B9207C5D89007E6E35 /* VTEnums.h in Headers */,
 				09C638AD207C5B6E007E6E35 /* VTReadDataViewController.h in Headers */,
@@ -767,7 +793,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5281689720F4436A0057DD10 /* vt_catalog@2x.png in Resources */,
 				52F8745E20F33B5A00AE8604 /* vt_back@2x.png in Resources */,
+				5281689920F4436A0057DD10 /* vt_setting@2x.png in Resources */,
+				5281689620F4436A0057DD10 /* vt_font@2x.png in Resources */,
+				5281689820F4436A0057DD10 /* vt_brightness@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -787,6 +817,7 @@
 				09C63891207C5B34007E6E35 /* NSString+VTPhoneInfo.m in Sources */,
 				09C6387E207C5B0A007E6E35 /* ioapi.c in Sources */,
 				09E2DB71208078E9000A03C2 /* VTReaderConfig.m in Sources */,
+				528168A120F483A50057DD10 /* UIFont+VTReader.m in Sources */,
 				09C63880207C5B0A007E6E35 /* mztools.c in Sources */,
 				528B999820EF6322009FF38A /* VTReadBottomMenuView.m in Sources */,
 				09C63882207C5B0A007E6E35 /* unzip.c in Sources */,
@@ -807,6 +838,7 @@
 				09C638AF207C5B6E007E6E35 /* VTReadDataViewController.m in Sources */,
 				52F8745720F32F8C00AE8604 /* UIColor+VT.m in Sources */,
 				528B998720EF0417009FF38A /* VTReadMenuView.m in Sources */,
+				5281689D20F481CC0057DD10 /* VTReadBottomChapterControlView.m in Sources */,
 				09C6389E207C5B5B007E6E35 /* VTBaseViewController.m in Sources */,
 				09C63884207C5B0A007E6E35 /* zip.c in Sources */,
 				09C638C0207C5FC5007E6E35 /* VTEpubManager.m in Sources */,
