@@ -16,6 +16,15 @@ typedef NS_OPTIONS(NSInteger, CenterWidth) {
     CenterWidth_Default = 1<<7
 };
 
+typedef NS_OPTIONS(NSInteger, FontSize) {
+    FontSize_8 = 8, // 8号字体
+    FontSize_12 = 12, // 12号字体
+    FontSize_14 = 14, // 14号字
+    FontSize_15,
+    FontSize_16,
+    FontSize_17
+};
+
 @interface VTEnums : NSObject
 
 @end
