@@ -176,7 +176,9 @@ NSString *const kNotificationShowOrHideMenu = @"kNotificationShowOrHideMenu"; //
     self.hiddenStatusBar = self.menuView.hidden;
     [self setNeedsStatusBarAppearanceUpdate];
     
-    
+    if (!self.menuView.hidden) {
+        [self.menuView setNeedsLayout];
+    }
     
 }
 
