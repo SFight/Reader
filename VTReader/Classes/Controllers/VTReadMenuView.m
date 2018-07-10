@@ -15,12 +15,8 @@ extern NSString *const kNotificationShowOrHideMenu;
 
 @interface VTReadMenuView()<UIGestureRecognizerDelegate>
 
-/** 顶部菜单背景 */
-@property (nonatomic, strong) UIView *topMenuBgView;
 /** 顶部菜单 */
 @property (nonatomic, strong) VTReadTopMenuView *topMenuView;
-/** 底部菜单背景 */
-@property (nonatomic, strong) UIView *bottomMenuBgView;
 /** 底部菜单 */
 @property (nonatomic, strong) VTReadBottomMenuView *bottomMenuView;
 
@@ -34,7 +30,7 @@ extern NSString *const kNotificationShowOrHideMenu;
     self = [super initWithFrame:frame];
     if (self) {
         
-        [self setupSubviews];
+//        [self setupSubviews];
         
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
 //        tap.delegate = self;
@@ -42,6 +38,17 @@ extern NSString *const kNotificationShowOrHideMenu;
     }
     
     return self;
+}
+
+#pragma mark - Override
+- (void)layoutSubviews
+{
+    VTLog(@"要重新初始化总菜单了");
+    for (UIView *aView in [self subviews]) {
+        [aView removeFromSuperview];
+    }
+    
+    [self setupSubviews];
 }
 
 - (void)setupSubviews
@@ -52,29 +59,13 @@ extern NSString *const kNotificationShowOrHideMenu;
     CGFloat height = [NSString isIphoneX] ? 88 : 64; // iPhoneX StatusBar高44px，NavigationBar高44px，底部TabBar高83px
     // 普通 StatusBar高20px，NavigationBar高44px，底部TabBar高49px
     
-    _topMenuBgView = [[UIView alloc] initWithFrame:CGRectMake(originX, originY, width, height)];
-    self.topMenuBgView.backgroundColor = [UIColor colorForReaderMenu];
-//    self.topMenuBgView.hidden = YES;
-    
-    originY = [NSString isIphoneX] ? 44 : 20;
-    height = CGRectGetHeight(self.topMenuBgView.frame) - originY;
     _topMenuView = [[VTReadTopMenuView alloc] initWithFrame:CGRectMake(originX, originY, width, height)];
-    [self.topMenuBgView addSubview:self.topMenuView];
+    [self addSubview:self.topMenuView];
     
-    height = [NSString isIphoneX] ? 220 + 34 : 220;
-    originY = CGRectGetHeight(self.frame) - height;
-    
-    _bottomMenuBgView = [[UIView alloc] initWithFrame:CGRectMake(originX, originY, width, height)];
-    self.bottomMenuBgView.backgroundColor = [UIColor colorForReaderMenu];
-//    self.bottomMenuBgView.hidden = YES;
-    
-    originY = 0;
-    height = [NSString isIphoneX] ? CGRectGetHeight(self.bottomMenuBgView.frame) - 34 : CGRectGetHeight(self.bottomMenuBgView.frame);
+    originY = CGRectGetMaxY(self.topMenuView.frame);
+    height = CGRectGetHeight(self.frame) - originY;
     _bottomMenuView = [[VTReadBottomMenuView alloc] initWithFrame:CGRectMake(originX, originY, width, height)];
-    [self.bottomMenuBgView addSubview:self.bottomMenuView];
-    
-    [self addSubview:self.topMenuBgView];
-    [self addSubview:self.bottomMenuBgView];
+    [self addSubview:self.bottomMenuView];
 }
 
 #pragma mark - SEL
