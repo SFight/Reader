@@ -13,11 +13,10 @@
 		09C63822207C5856007E6E35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C63821207C5856007E6E35 /* Assets.xcassets */; };
 		09C63825207C5856007E6E35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C63823207C5856007E6E35 /* LaunchScreen.storyboard */; };
 		09C63828207C5856007E6E35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C63827207C5856007E6E35 /* main.m */; };
-		09C63834207C58E1007E6E35 /* VTReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C63833207C58CD007E6E35 /* VTReader.framework */; };
-		09C63835207C58E1007E6E35 /* VTReader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09C63833207C58CD007E6E35 /* VTReader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		09C638BB207C5E38007E6E35 /* 三言二拍（插图版）.epub in Resources */ = {isa = PBXBuildFile; fileRef = 09C638BA207C5E38007E6E35 /* 三言二拍（插图版）.epub */; };
 		5238F22C20E2392800C9EB66 /* 1037191.epub in Resources */ = {isa = PBXBuildFile; fileRef = 5238F22B20E2392800C9EB66 /* 1037191.epub */; };
 		52958DD920CA14DC00C64900 /* 3187326.epub in Resources */ = {isa = PBXBuildFile; fileRef = 52958DD820CA14DC00C64900 /* 3187326.epub */; };
+		52B591792255F27D00881C7C /* VTReader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52B591462255EECF00881C7C /* VTReader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		52F8744F20F3109900AE8604 /* DTFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F8744E20F3109900AE8604 /* DTFoundation.framework */; };
 		52F8745020F3109900AE8604 /* DTFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52F8744E20F3109900AE8604 /* DTFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		52F8745220F3109900AE8604 /* DTCoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F8745120F3109900AE8604 /* DTCoreText.framework */; };
@@ -25,16 +24,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		09C63832207C58CD007E6E35 /* PBXContainerItemProxy */ = {
+		52B591452255EECF00881C7C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 09C6382E207C58CD007E6E35 /* VTReader.xcodeproj */;
+			containerPortal = 52B5913F2255EECE00881C7C /* VTReader.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 09C637F7207C57DA007E6E35;
 			remoteInfo = VTReader;
 		};
-		09C63836207C58E1007E6E35 /* PBXContainerItemProxy */ = {
+		52B591472255EEDC00881C7C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 09C6382E207C58CD007E6E35 /* VTReader.xcodeproj */;
+			containerPortal = 52B5913F2255EECE00881C7C /* VTReader.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 09C637F6207C57DA007E6E35;
 			remoteInfo = VTReader;
@@ -48,7 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				09C63835207C58E1007E6E35 /* VTReader.framework in Embed Frameworks */,
+				52B591792255F27D00881C7C /* VTReader.framework in Embed Frameworks */,
 				52F8745020F3109900AE8604 /* DTFoundation.framework in Embed Frameworks */,
 				52F8745320F3109900AE8604 /* DTCoreText.framework in Embed Frameworks */,
 			);
@@ -68,10 +67,10 @@
 		09C63824207C5856007E6E35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09C63826207C5856007E6E35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09C63827207C5856007E6E35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		09C6382E207C58CD007E6E35 /* VTReader.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VTReader.xcodeproj; path = ../../VTReader/VTReader.xcodeproj; sourceTree = "<group>"; };
 		09C638BA207C5E38007E6E35 /* 三言二拍（插图版）.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "三言二拍（插图版）.epub"; sourceTree = "<group>"; };
 		5238F22B20E2392800C9EB66 /* 1037191.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1037191.epub; sourceTree = "<group>"; };
 		52958DD820CA14DC00C64900 /* 3187326.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3187326.epub; sourceTree = "<group>"; };
+		52B5913F2255EECE00881C7C /* VTReader.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = VTReader.xcodeproj; sourceTree = SOURCE_ROOT; };
 		52F8744E20F3109900AE8604 /* DTFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DTFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F8745120F3109900AE8604 /* DTCoreText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DTCoreText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -81,7 +80,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09C63834207C58E1007E6E35 /* VTReader.framework in Frameworks */,
 				52F8744F20F3109900AE8604 /* DTFoundation.framework in Frameworks */,
 				52F8745220F3109900AE8604 /* DTCoreText.framework in Frameworks */,
 			);
@@ -111,7 +109,7 @@
 		09C63817207C5856007E6E35 /* VTReaderTest */ = {
 			isa = PBXGroup;
 			children = (
-				09C6382E207C58CD007E6E35 /* VTReader.xcodeproj */,
+				52B5913F2255EECE00881C7C /* VTReader.xcodeproj */,
 				09C63818207C5856007E6E35 /* AppDelegate.h */,
 				09C63819207C5856007E6E35 /* AppDelegate.m */,
 				09C6381B207C5856007E6E35 /* ViewController.h */,
@@ -128,10 +126,10 @@
 			path = VTReaderTest;
 			sourceTree = "<group>";
 		};
-		09C6382F207C58CD007E6E35 /* Products */ = {
+		52B591402255EECE00881C7C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				09C63833207C58CD007E6E35 /* VTReader.framework */,
+				52B591462255EECF00881C7C /* VTReader.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,7 +149,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				09C63837207C58E1007E6E35 /* PBXTargetDependency */,
+				52B591482255EEDC00881C7C /* PBXTargetDependency */,
 			);
 			name = VTReaderTest;
 			productName = VTReaderTest;
@@ -186,8 +184,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 09C6382F207C58CD007E6E35 /* Products */;
-					ProjectRef = 09C6382E207C58CD007E6E35 /* VTReader.xcodeproj */;
+					ProductGroup = 52B591402255EECE00881C7C /* Products */;
+					ProjectRef = 52B5913F2255EECE00881C7C /* VTReader.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -198,11 +196,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		09C63833207C58CD007E6E35 /* VTReader.framework */ = {
+		52B591462255EECF00881C7C /* VTReader.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = VTReader.framework;
-			remoteRef = 09C63832207C58CD007E6E35 /* PBXContainerItemProxy */;
+			remoteRef = 52B591452255EECF00881C7C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -237,10 +235,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		09C63837207C58E1007E6E35 /* PBXTargetDependency */ = {
+		52B591482255EEDC00881C7C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = VTReader;
-			targetProxy = 09C63836207C58E1007E6E35 /* PBXContainerItemProxy */;
+			targetProxy = 52B591472255EEDC00881C7C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
