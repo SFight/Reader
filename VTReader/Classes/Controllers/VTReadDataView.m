@@ -78,6 +78,12 @@ extern NSString *const kNotificationShowOrHideMenu;
 
 }
 
+#pragma mark - 链接点击
+- (void)linkPushed:(DTLinkButton *)button
+{
+    VTLog(@"点击到链接:%@", button.URL);
+}
+
 #pragma mark - UIGestureRecognizerDelegate
 //- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
